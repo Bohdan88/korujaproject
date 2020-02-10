@@ -1,0 +1,61 @@
+#products {
+  padding-top:50px;
+}
+
+.header-products::after {
+  content: '';
+  display: block;
+  margin: 10px auto;
+  height: 3px;
+  width: 50px;
+  background: #9CC4C3;
+  will-change: transform, opacity;
+}
+
+.products-tab > div {
+  div.ui.secondary.menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.ui.segment.active.tab > div {
+    background: linear-gradient(0deg, rgba(147, 193, 190, 1) 0%, rgba(255, 255, 255, 1) 13%);
+  }
+}
+
+
+.products-images {
+  width: 250px;
+  height: 250px;
+}
+
+
+.cosmetics-left-tab > div.ui.grid {
+  div.four.wide.column {
+    background: linear-gradient(0deg, rgba(147, 193, 190, 1) 0%, rgba(255, 255, 255, 1) 13%);
+  }
+
+  div.stretched.twelve.wide.column {
+    padding-left: 1px;
+    background: linear-gradient(0deg, rgba(147, 193, 190, 1) 0%, rgba(255, 255, 255, 1) 13%);
+
+    .active.tab {
+      border-left: none !important;
+      border-radius: 0px;
+
+      div.ui.grid {
+        background: #fff;
+      }
+    }
+  }
+
+  div.four.wide.column {
+    padding-right: 0px;
+
+    .tabular.menu {
+      border-right: 1px solid #d4d4d5;
+      height: 100%;
+    }
+  }
+}
+

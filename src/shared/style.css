@@ -1,0 +1,33 @@
+
+.nav-bar-menu {
+    background-color: #EDEDEF!important;
+    padding:0 20px;
+    border:none!important;
+}
+
+.nav-bar-menu-items {
+    color: #111010;
+}
+
+.nav-bar-menu-items:hover{
+    color:red!important;
+}
+
+
+.logo-name {
+    color: #8A9493;
+    font-size:25px;
+    letter-spacing: 5px;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.logo-container {
+    flex-direction: initial;
+    display: flex;
+}
+
+.logo-container:hover {
+    background-color: #EDEDEF!important;
+}
+
