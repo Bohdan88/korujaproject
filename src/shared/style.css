@@ -2,8 +2,12 @@
 .nav-bar-menu {
     background-color: #EDEDEF!important;
     padding:0 20px;
+    top:0px!important;
     border:none!important;
+    z-index:1000!important;
+    position: static!important;
 }
+
 
 .nav-bar-menu-items {
     color: #111010;
@@ -30,4 +34,22 @@
 .logo-container:hover {
     background-color: #EDEDEF!important;
 }
+
+@media only screen and (max-width: 767px) {
+
+    .nav-bar-menu {
+        box-shadow: none!important;
+    }
+
+    .nav-bar-sticky {
+        background-color: #EDEDEF!important;
+    }
+
+    .footer-container-desc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 

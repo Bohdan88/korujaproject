@@ -44,3 +44,7 @@ export const PRODUCTS_TABS = {
         "fillers": ["HYAFILIA_", "CELOSOME", "REPLENGEN", "NEURAMIS", "DERMALAX", "MELINE"]
     }
 };
+
+export const FORM_CONTENT = {
+    'ru': ['ВАШЕ ИМЯ', 'ВАШ EMAIL']
+};

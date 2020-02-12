@@ -1,15 +1,28 @@
 import React from 'react';
 import {NAV_BAR} from "../constants";
-import {Menu, Container, Sticky} from "semantic-ui-react";
 import './style.css';
 import logo from '../assets/image2.svg';
+import {
+    Menu,
+    Container,
+    Image,
+    Sticky
+} from "semantic-ui-react";
 
 const NavBar = () => {
     return (
         <div>
-            <Container fluid>
-                <Sticky>
+            <Sticky
+                className='nav-bar-sticky'
+                // offset={0}
+                // onUnstick={(props)=> console.log(props, 'props')}
+            >
+                <Container
+                    // className='nav-bar-container'
+                    fluid>
                     <Menu
+                        // fixed='top'
+                        // attached='top'
                         className="nav-bar-menu"
                         borderless>
                         <Menu.Menu position="left">
@@ -18,7 +31,7 @@ const NavBar = () => {
                                 href="/"
                                 className="logo-container"
                             >
-                                <img src={logo}/>
+                                <Image src={logo}/>
                                 <span className="logo-name">KRJ</span>
                             </Menu.Item>
                         </Menu.Menu>
@@ -36,8 +49,9 @@ const NavBar = () => {
                             })}
                         </Menu.Menu>
                     </Menu>
-                </Sticky>
-            </Container>
+                </Container>
+            </Sticky>
+
         </div>
     );
 };

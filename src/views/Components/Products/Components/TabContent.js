@@ -1,53 +1,88 @@
 import React, {Component} from 'react';
-import {Image, Grid, Tab} from "semantic-ui-react";
-import botulax100 from "../../../../assets/cosmetics/botulax100.jpg";
+import {
+    Image,
+    Grid,
+    Tab,
+    Reveal,
+    Header
+} from "semantic-ui-react";
 import {PRODUCTS_TABS, PRODUCTS_LINK} from "../../../../constants/";
 
 
-const panes = [
-    { menuItem: 'Токсины', render: () => <Tab.Pane>Токсины</Tab.Pane> },
-    { menuItem: 'Филлеры', render: () => <Tab.Pane>Филлеры</Tab.Pane> },
-    { menuItem: 'Мезопрепараты', render: () => <Tab.Pane>Мезопрепараты</Tab.Pane> },
-]
-
 class TabContent extends Component {
-    state = {
-        panes: [
-            { menuItem: 'Токсины', render: () => <Tab.Pane>{this.fetchImages('toxins')}</Tab.Pane> },
-            { menuItem: 'Филлеры', render: () => <Tab.Pane>{this.fetchImages('fillers')}</Tab.Pane> },
-            { menuItem: 'Мезопрепараты', render: () => <Tab.Pane>Мезопрепараты</Tab.Pane> },
-        ]
-    };
+    constructor (props) {
+        super(props);
+        this.state = {
+            panes: [
+                {menuItem: 'Токсины', render: () => <Tab.Pane>{this.fetchImages('toxins')}</Tab.Pane>},
+                {menuItem: 'Филлеры', render: () => <Tab.Pane>{this.fetchImages('fillers')}</Tab.Pane>},
+                {menuItem: 'Мезопрепараты', render: () => <Tab.Pane>Мезопрепараты</Tab.Pane>},
+            ],
+            revealed: false,
+        };
+    }
+
 
     fetchImages = (value) => {
         return (
             <Grid>
                 <Grid.Row
-                    columns={3}>
+
+                >
                     {PRODUCTS_TABS.cosmetics[value].map((name, key) => {
-                        return <Grid.Column key={key}>
-                            <Image
-                                className='products-images'
-                                src={`${PRODUCTS_LINK}${value}/${name}`}/>
+                        return <Grid.Column
+                            className='product-column'
+                            verticalAlign={'middle'}
+                            key={key}
+                            largeScreen={8}
+                            tablet={8}
+                            computer={8}
+                            widescreen={5}
+                            mobile={16}
+                        >
+                            <Reveal
+                                className={'products-reveal'}
+                                animated='fade'>
+                                <Reveal.Content visible>
+                                    <Grid.Column key={key}>
+                                        <Image
+                                            className='products-images'
+                                            src={`${PRODUCTS_LINK}${value}/${name}`}/>
+                                    </Grid.Column>
+                                </Reveal.Content>
+                                <Reveal.Content
+                                    className='product-name'
+                                    hidden>
+                                    <Header
+                                        as={'h3'}
+                                    >
+                                        {name.split('_').join(' ')}
+                                    </Header>
+                                </Reveal.Content>
+                                <Reveal/>
+                            </Reveal>
                         </Grid.Column>
                     })}
-
                 </Grid.Row>
             </Grid>
         )
     };
+
+
     render () {
         return (
             <div>
                 <Tab
+                    ref={this.tabRef}
                     className='cosmetics-left-tab'
-                    menu={{ fluid: true, vertical: true, tabular: true }}
+                    menu={{fluid: true, vertical: true, tabular: true}}
                     panes={this.state.panes}
                 />
 
             </div>
         );
     }
-};
+}
+;
 
 export default TabContent;
