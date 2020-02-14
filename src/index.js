@@ -15,37 +15,41 @@ import * as serviceWorker from './serviceWorker';
 // styles
 import './style/index.scss';
 import 'semantic-ui-css/semantic.min.css'
+import {LangProvider} from './context/LangContext';
 
 const hist = createBrowserHistory();
 
-const routing = (
-    <div>
-        <Router history={hist}>
-            <div>
-                <NavBar/>
-                <Switch>
-                    {NAV_BAR.map((item, key) => {
-                        return item.path === "/" ?
-                            <Route exact
-                                   key={key}
-                                   path={item.path}
-                                   component={item.component}
-                            /> :
 
-                            <Route
-                                key={key}
-                                path={item.path}
-                                component={item.component}/>
-                    })}
-                    <Route component={NotFound}/>
-                </Switch>
-            </div>
-        </Router>
-        <About/>
-        <Products/>
-        <Contacts/>
-        <Footer/>
-    </div>
+const routing = (
+    <LangProvider>
+        <div>
+            <Router history={hist}>
+                <div>
+                    <NavBar/>
+                    <Switch>
+                        {NAV_BAR.map((item, key) => {
+                            return item.path === "/" ?
+                                <Route exact
+                                       key={key}
+                                       path={item.path}
+                                       component={item.component}
+                                /> :
+
+                                <Route
+                                    key={key}
+                                    path={item.path}
+                                    component={item.component}/>
+                        })}
+                        <Route component={NotFound}/>
+                    </Switch>
+                </div>
+            </Router>
+            <About/>
+            <Products/>
+            <Contacts/>
+            <Footer/>
+        </div>
+    </LangProvider>
 )
 
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {
     Grid,
     Image,
@@ -9,10 +9,12 @@ import {
 import {
     LIST_DESCRIPTION
 } from '../../../constants/';
-import about from '../../../assets/about.jpg';
+import aboutImg from '../../../assets/about.jpg';
 import './style.scss';
+import LangContext from '../../../context/LangContext';
 
 const About = () => {
+    const {about} = useContext(LangContext).currentLangData;
     return (
         <Grid
             id='about'
@@ -22,33 +24,31 @@ const About = () => {
                 computer={8}
                 mobile={16}
                 className='first-column-about'>
+
                 <Container
                     fluid
                     className='about-desc'>
                     <Header
                         className='header-about-desc'
                         as='h2'>
-                        О НАС
+                        {about.header}
                     </Header>
                     <p
                         className='paragraph-about-desc'
                     >
-                        <b>KoRuJa</b> оптовая экспортная компания <br/>
-                        профессиональной косметики и <br/>
-                        косметологичкеских препаратов из <br/>
-                        Ю.Кореи и Японии.
+                        <b>KoRuJa </b>{about.desc}
                     </p>
 
                     <p className='paragraph-about-desc'>
-                        Специализация:
+                        {about.spec}
                     </p>
 
                     <List className='list-content-about'
                     >
-                        {LIST_DESCRIPTION.ru.map((desc, key) => {
+                        {about.list.map((desc, key) => {
                             return <List.Item key={key}>
                                 <List.Icon
-                                    size={window.innerWidth < 768 ? 'small' : 'large'}
+                                    size={window.innerWidth < 768 ? 'small' : 'small'}
                                     corent='bottom left'
                                     className="about-icon"
                                     name='checkmark'
@@ -67,7 +67,7 @@ const About = () => {
                 mobile={16}
                 stretched
                 className='second-column-about'>
-                <Image src={about}/>
+                <Image src={aboutImg}/>
             </Grid.Column>
         </Grid>
     );

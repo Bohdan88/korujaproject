@@ -64,7 +64,7 @@ const Footer = () => {
                     tablet={5}
                     widescreen={5}
                     largescreen={5}
-                    // tablet={5}
+                    computer={5}
                     mobile={16}
                 >
                     <Header
