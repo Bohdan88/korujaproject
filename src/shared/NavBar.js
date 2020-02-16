@@ -7,8 +7,7 @@ import {
     Container,
     Image,
     Sticky,
-    Item,
-    Button
+    Item
 } from "semantic-ui-react";
 import {
     GB_FLAG_LINK,
@@ -24,7 +23,6 @@ const NavBar = () => {
     const currentFlag = flag ? GB_FLAG_LINK : RU_FLAG_LINK;
     const currentLanguage = flag ? 'en-US' : 'ru-RU';
 
-    const {card} = useContext(LangContext).currentLangData;
     return (
         <div>
             <Sticky

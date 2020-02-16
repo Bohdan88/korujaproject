@@ -20,7 +20,7 @@ export const LangProvider = (props) => {
         }
     }, [lang])
 
-    const switchLang = (ln) => {
+    const switchLang = ln => {
         setLang(ln);
         window.localStorage.setItem('appUILang', ln);
     };

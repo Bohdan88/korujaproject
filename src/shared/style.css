@@ -29,6 +29,7 @@
 .logo-container {
     flex-direction: initial;
     display: flex;
+    justify-content: center;
 }
 
 .logo-container:hover {
@@ -192,9 +193,6 @@
     }
 
 
-    .logo-container {
-
-    }
 
     /*sidebar*/
     .mobile-close-menu {
@@ -216,7 +214,7 @@
         background: #EDEDEF !important;
         overflow-x: hidden;
         transition: 0.3s;
-        border-top: 1px solid grey;
+        border-top: 1px solid rgba(0,0,0,.5);;
     }
 
 
@@ -232,7 +230,7 @@
         /* right: 0px; */
         width: 100%;
         cursor: pointer;
-        margin-left: 150px;
+        margin-left: 135px;
     }
 
     .mobile-nav-bar-language {

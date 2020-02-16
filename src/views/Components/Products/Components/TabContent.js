@@ -19,7 +19,7 @@ const fetchImages = (value) => {
                 {PRODUCTS_TABS.cosmetics[value].map((name, key) => {
                     return <Grid.Column
                         className='product-column'
-                        verticalAlign={'middle'}
+                        verticalAlign='middle'
                         key={key}
                         largeScreen={8}
                         tablet={8}
@@ -28,7 +28,7 @@ const fetchImages = (value) => {
                         mobile={16}
                     >
                         <Reveal
-                            className={'products-reveal'}
+                            className='products-reveal'
                             animated='fade'>
                             <Reveal.Content visible>
                                 <Grid.Column key={key}>
@@ -59,12 +59,12 @@ const createPanes = products => {
     return [
         {
             menuItem: products.subTabNames.toxins,
-            render: () => <Tab.Pane>{fetchImages('toxins')}</Tab.Pane>
+            render: () => <Tab.Pane attached={false}>{fetchImages('toxins')}</Tab.Pane>
         },
         {
             menuItem: products.subTabNames.fillers,
             render:
-                () => <Tab.Pane>{fetchImages('fillers')}</Tab.Pane>
+                () => <Tab.Pane attached={false} >{fetchImages('fillers')}</Tab.Pane>
         }
         ,
         {
@@ -79,11 +79,12 @@ const createPanes = products => {
 
 const TabContent = () => {
     const {products} = useContext(LangContext).currentLangData;
+    const innerWidth = window.innerWidth > 625 ? true : false
     return (
         <div>
             <Tab
                 className='cosmetics-left-tab'
-                menu={{fluid: true, vertical: true, tabular: true}}
+                menu={{fluid: innerWidth, vertical: innerWidth, tabular: innerWidth ,pointing: true , secondary: true}}
                 panes={createPanes(products)}
             />
 
