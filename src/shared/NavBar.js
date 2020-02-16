@@ -33,11 +33,10 @@ const NavBar = () => {
                 // onUnstick={(props)=> console.log(props, 'props')}
             >
                 <Container
+                    className='mobile-nav-bar-container'
                     // className='nav-bar-container'
                     fluid>
                     <Menu
-                        // fixed='top'
-                        // attached='top'
                         className="nav-bar-menu"
                         borderless>
 

@@ -74,17 +74,26 @@
   }
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 767px) {
 
   .about-desc {
     padding: 40px;
   }
 
+  .paragraph-about-desc {
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    width:100%;
+    line-height: 2;
+  }
+
   .about-desc > *, .list-content-about > .item {
     font-size: 15px !important;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
   .about-icon {
     vertical-align: middle!important;
   }
+
+
 }

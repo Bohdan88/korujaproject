@@ -87,7 +87,7 @@ const Footer = () => {
                         </p>
                         <p>
                             <b>{footer.mail}</b>: krj.shop7@gmail.com <br/>
-                            <b>Viber</b>: +82-10-387-75702
+                            <b>Viber/Telegram</b>: +82-10-387-75702
                         </p>
 
                         <p>

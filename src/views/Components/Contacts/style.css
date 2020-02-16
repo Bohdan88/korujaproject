@@ -73,6 +73,9 @@
 }
 
 
+/*.alert-container-class {*/
+    /*width:80%!important;*/
+/*}*/
 
 @media screen and (max-width: 1199px)  {
     .contacts-modal {
@@ -89,4 +92,6 @@
     .contacts-modal {
         display: none;
     }
+
+
 }

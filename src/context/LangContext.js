@@ -39,7 +39,7 @@ export const LangProvider = (props) => {
 const langData = {
     'en-US': {
         about: {
-            header: ['ABOUT'],
+            header: ['ABOUT US'],
             desc: [' is a wholesale company which provides professional makeup products from South Korea and Japan.'],
             spec: ['Our specialization is: '],
             list: ['Wholesale supply of cosmetic and cosmetology products',

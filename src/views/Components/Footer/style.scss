@@ -52,7 +52,7 @@
 }
 
 
-@media screen and(max-width: 768px) {
+@media screen and(max-width: 767px) {
   .footer-menu-column, .footer-container-desc, .footer-column-logo {
     display:none!important;
   }
@@ -80,9 +80,12 @@
     //padding-left:50px;
   }
 
+
+
   .footer-contacts-info {
     display:flex;
     flex-direction: column;
   }
+
 
 }

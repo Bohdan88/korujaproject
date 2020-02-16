@@ -1,14 +1,9 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React, {useContext, useState} from 'react';
 import {NAV_BAR} from "../constants";
 import './style.css';
-import logo from '../assets/image2.svg';
 import {
-    Menu,
-    Container,
     Image,
-    Sticky,
-    Item,
-    Button
+    List,
 } from "semantic-ui-react";
 import {
     GB_FLAG_LINK,
@@ -17,23 +12,56 @@ import {
 import LangContext from '../context/LangContext';
 
 const MobileMenu = () => {
-    const [menu, toggleMenu] = useState(false)
+    const [menu, toggleMenu] = useState(false);
+    const [flag, switchFlag] = useState(true);
+    const {switchLang, lang} = useContext(LangContext);
+    const currentFlag = flag ? GB_FLAG_LINK : RU_FLAG_LINK;
+    const currentLanguage = flag ? 'en-US' : 'ru-RU';
+
 
     const hamburgerClass = menu ? 'open' : '';
-    return ( <div className='mobile-nav-bar mobile-view'>
-                <div className="menu-icon-wrapper float-left" onClick={()=> toggleMenu(!menu)}>
-                    <div id="hamburger" className={hamburgerClass}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </div>
+    const menuClass = menu ? 'mobile-open-menu' : 'mobile-close-menu';
+    return (<div className='mobile-nav-bar mobile-view'>
+            <div className="menu-icon-wrapper float-left" onClick={() => toggleMenu(!menu)}>
+                <div id="hamburger" className={hamburgerClass}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+            </div>
+
+            <div className={menuClass}>
+                {NAV_BAR.map((item, key) => {
+                    return <List.Item
+                        name={'error'}
+                        key={key}
+                        as='a'
+                        href={item.path}
+                        className='mobile-sidebar-menu'
+                        // className={menuClass}
+                    >
+                        <List.Icon name={item.icon}/>
+                        <List.Content>{item.name[flag ? 0 : 1]}</List.Content>
+                    </List.Item>
+
+                })}
+
+                <List.Item>
+                    <Image
+                        className='mobile-nav-bar-language'
+                        src={currentFlag}
+                        onClick={() => {
+                            switchFlag(!flag)
+                            switchLang(currentLanguage)
+                        }}
+                    />
+                </List.Item>
+            </div>
         </div>
-)
+    )
 }
 
 export default MobileMenu;
