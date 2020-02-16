@@ -6,7 +6,7 @@ import {
     Header,
     Image
 } from "semantic-ui-react";
-import {PRODUCTS_TABS, PRODUCTS ,CLOUD_NAME} from "../../../../constants/";
+import {PRODUCTS_TABS, PRODUCTS, CLOUD_NAME} from "../../../../constants/";
 import LangContext from '../../../../context/LangContext';
 import {Image as CloudImage, Transformation, CloudinaryContext} from "cloudinary-react";
 
@@ -17,7 +17,6 @@ const fetchImages = (value) => {
 
             >
                 {PRODUCTS_TABS.cosmetics[value].map((name, key) => {
-                    {console.log(name,'name')}
                     return <Grid.Column
                         className='product-column'
                         verticalAlign='middle'
@@ -81,7 +80,7 @@ const createPanes = products => {
         {
             menuItem: products.subTabNames.meso,
             render:
-                () => <Tab.Pane>Мезопрепараты</Tab.Pane>
+                () => <Tab.Pane attached={false}>{fetchImages('meso')}</Tab.Pane>
         }
         ,
     ]
@@ -104,16 +103,6 @@ const TabContent = () => {
                 }}
                 panes={createPanes(products)}
             />
-
-            {/*<CloudImage cloudName="koruja" publicId="products/fillers/CELOSOME____.jpg" width="300" crop="scale"/>*/}
-            {/*// Or for more advanced usage:*/}
-            {/*// import {CloudinaryContext, Transformation} from 'cloudinary-react';*/}
-            {/*<CloudinaryContext cloudName="koruja">*/}
-            {/*<CloudImage publicId="BOTULAX_200U">*/}
-            {/*<Transformation width="200" crop="scale" angle="10"/>*/}
-            {/*</CloudImage>*/}
-            {/*</CloudinaryContext>*/}
-
         </div>
     );
 };

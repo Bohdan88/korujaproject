@@ -42,7 +42,8 @@ export const CLOUD_NAME = "koruja";
 export const PRODUCTS_TABS = {
     "cosmetics": {
         "toxins" : ["NABOTA_100UU", "INNOTOX_50U", "HUTOX_100U", "MEDITOXIN_100U", "BOTULAX_200U", "NEURONOX_100U", "BOTULAX_100"],
-        "fillers": ["HYAFILIA____", "CELOSOME____", "REPLENGEN_", "NEURAMIS_", "DERMALAX___", "MELINE_", 'ELOHA']
+        "fillers": ["ELOHA", "HYAFILIA____", "CELOSOME____", "REPLENGEN_", "NEURAMIS_", "DERMALAX___", "MELINE_"],
+        "meso": ["HYARON" , "LUMI_EYE__" , "HIDR_INJ_" , "CELOSOME_AQUA_" , "DOTOTHY", "REGENOVUE_AQUASHINE"]
     }
 };
 

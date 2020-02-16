@@ -1,14 +1,7 @@
 import React, {useContext} from 'react';
-import {
-    Header,
-    Tab,
-    Image
-} from 'semantic-ui-react';
+import {Header, Tab} from 'semantic-ui-react';
 import './style.scss';
 import TabContent from './Components/';
-
-import botex from '../../../assets/botex.jpg';
-import banner from '../../../assets/banner.jpg';
 import LangContext from '../../../context/LangContext';
 
 
