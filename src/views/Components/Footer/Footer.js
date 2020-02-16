@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import logo from "../../../assets/image2.svg";
 import './style.scss';
 import {NAV_BAR} from "../../../constants";
@@ -8,8 +8,11 @@ import {
     Container,
     Menu, Header
 } from 'semantic-ui-react';
+import LangContext from '../../../context/LangContext';
 
 const Footer = () => {
+    const { footer, app } = useContext(LangContext).currentLangData;
+    const navIndex = app.language === 'ru' ? 0 : 1;
     return (
         <div id="footer">
             <Grid>
@@ -29,11 +32,12 @@ const Footer = () => {
                     <Container
                         className="footer-container-desc"
                     >
-                        <p>
-                            2004-2020 <br/>
-                            Экспортная компания KoRuJa <br/>
-                            "Прямая Корея / Прямая Япония "
-                        </p>
+                        {/*<p>*/}
+                            {/*2004-2020 <br/>*/}
+                            {/*Экспортная компания KoRuJa <br/>*/}
+                            {/*"Прямая Корея / Прямая Япония "*/}
+                        {/*</p>*/}
+                        {footer.company}
                     </Container>
                 </Grid.Column>
                 <Grid.Column
@@ -53,7 +57,7 @@ const Footer = () => {
                                     href={item.path}
                                     className="footer-menu-items nav-bar-menu-items"
                                 >
-                                    {item.name}
+                                    {item.name[navIndex]}
                                 </Menu.Item>
 
                             })}
@@ -71,7 +75,7 @@ const Footer = () => {
                         textAlign='center'
                         className='footer-contacts-header'
                         as='h4'>
-                        КОНТАКТНАЯ ИНФОРМАЦИЯ
+                        {footer.info}
                     </Header>
                     <Container
 
@@ -82,12 +86,12 @@ const Footer = () => {
                             +82-55-266-8400
                         </p>
                         <p>
-                            <b>Эл. почта</b>: krj.shop7@gmail.com <br/>
+                            <b>{footer.mail}</b>: krj.shop7@gmail.com <br/>
                             <b>Viber</b>: +82-10-387-75702
                         </p>
 
                         <p>
-                            <b>Главный Офис:</b> 1F, Sinwol-Ro 24,<br/>
+                            <b>{footer.office}</b> 1F, Sinwol-Ro 24,<br/>
                             Uichangu,Changwon City Korea , 51443
                         </p>
                     </Container>

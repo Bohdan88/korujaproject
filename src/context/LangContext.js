@@ -47,8 +47,44 @@ const langData = {
                 'Own brand of cosmetology products called ELOHA'
             ]
         },
+        products: {
+            header: ['PRODUCTS'],
+            tabNames: {
+                'cosmetology': 'COSMETOLOGY',
+                'lifting': 'LIFTING THREAD',
+                'cosmetics': 'COSMETICS',
+                'other': 'OTHER PRODUCTS'
+            },
+            subTabNames: {
+                'toxins': 'TOXINS',
+                'fillers': 'FILLERS',
+                'meso': 'MESO'
+            }
+        },
+        contacts: {
+            header: ['CONTACTS'],
+            userName: ['YOUR NAME'],
+            userEmail: ['YOUR EMAIL'],
+            message: 'YOUR MESSAGE',
+            send: 'SEND',
+            emailError: 'Please enter a valid email address',
+            nameError: 'The field supposed to have more than 1 character',
+            textError: 'The field supposed to have more than 15 and less than 250 characters',
+            messageHeader: 'Form Completed',
+            messageSuccessContent: 'Message successfully sent!',
+            messageFailContent: 'Unfortunately the message cannot be sent due to technical issues. We apologize for inconvenience :('
+
+        },
+        footer: {
+            company: ['2004-2020 Export Company KoRuJa "Direct Korea/ Direct Japan"'],
+            info: ['CONTACT INFO'],
+            office: ['Head Office: '],
+            mail: ['Email']
+        },
+
+
         app: {
-            h1: 'Select Language'
+            language: 'en'
         },
     },
     'ru-RU': {
@@ -61,8 +97,45 @@ const langData = {
                 'Собственный бренд косметологической продукции ELOHA'
             ]
         },
+        products: {
+            header: ['ПРОДУКЦИЯ'],
+            tabNames: {
+                'cosmetology': 'КОСМЕТОЛОГИЯ',
+                'lifting': 'НИТЕВОЙ ЛИФТИНГ',
+                'cosmetics': 'КОСМЕТИКА',
+                'other': 'ДРУГИЕ ТОВАРЫ'
+            },
+            subTabNames: {
+                'toxins': 'ТОКСИНЫ',
+                'fillers': 'ФИЛЛЕРЫ',
+                'meso': 'МЕЗОПРЕПАРАТЫ'
+            }
+
+        },
+        contacts: {
+            header: 'КОНТАКТЫ',
+            userName: 'ВАШЕ ИМЯ',
+            userEmail: 'ВАШ EMAIL',
+            message: 'ВАШЕ СООБЩЕНИЕ',
+            send: 'ОТПРАВИТЬ',
+            emailError: 'Пожалуйста введите корректный email',
+            nameError: 'Поле должно содержать больше чем 1 символ',
+            textError: 'Поле должно содержать больше чем 15 и меньше чем 250 симоволов',
+            messageHeader: 'Форма заполненя',
+            messageSuccessContent: 'Сообщение успешно отправлено!',
+            messageFailContent: 'К сожалению на сайте технические неполадки. Мы извиняемся за неудобство :('
+
+        },
+        footer: {
+            company: ['2004-2020  Экспортная компания KoRuJa "Прямая Корея/Прямая Япония"'],
+            info: ['КОНТАКТНАЯ ИНФОРМАЦИЯ'],
+            office: ['Главный Офис: '],
+            mail: ['Эл. почта'],
+
+
+        },
         app: {
-            h1: 'Изменить язык'
+            language: 'ru'
         },
     },
 }

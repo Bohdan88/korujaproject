@@ -24,7 +24,6 @@ const About = () => {
                 computer={8}
                 mobile={16}
                 className='first-column-about'>
-
                 <Container
                     fluid
                     className='about-desc'>

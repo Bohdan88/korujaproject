@@ -13,8 +13,11 @@ import {Sticky} from 'semantic-ui-react';
 import {Link, Switch, Route, Router} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 // styles
+import 'sweetalert2/src/sweetalert2.scss'
 import './style/index.scss';
 import 'semantic-ui-css/semantic.min.css'
+
+
 import {LangProvider} from './context/LangContext';
 
 const hist = createBrowserHistory();

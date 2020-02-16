@@ -80,10 +80,9 @@
     }
     #hamburger {
         position: absolute;
-        top: -22px;
+        top: 5px;
         width: 60px;
-        height: 145px;
-        border:1px solid red;
+        height: 45px;
         cursor: pointer;
         transform: rotate(0deg) scale(0.5);
         transition: 0.5s ease-in-out;
