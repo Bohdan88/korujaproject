@@ -37,11 +37,12 @@ export const NAV_BAR = [
 
 
 
-
+export const PRODUCTS = "products";
+export const CLOUD_NAME = "koruja";
 export const PRODUCTS_TABS = {
     "cosmetics": {
         "toxins" : ["NABOTA_100UU", "INNOTOX_50U", "HUTOX_100U", "MEDITOXIN_100U", "BOTULAX_200U", "NEURONOX_100U", "BOTULAX_100"],
-        "fillers": ["HYAFILIA_", "CELOSOME", "REPLENGEN", "NEURAMIS", "DERMALAX", "MELINE"]
+        "fillers": ["HYAFILIA____", "CELOSOME____", "REPLENGEN_", "NEURAMIS_", "DERMALAX___", "MELINE_", 'ELOHA']
     }
 };
 

@@ -1,14 +1,14 @@
 import React, {useContext} from 'react';
 import {
-    Image,
     Grid,
     Tab,
     Reveal,
-    Header
+    Header,
+    Image
 } from "semantic-ui-react";
-import {PRODUCTS_TABS, PRODUCTS_LINK} from "../../../../constants/";
+import {PRODUCTS_TABS, PRODUCTS ,CLOUD_NAME} from "../../../../constants/";
 import LangContext from '../../../../context/LangContext';
-
+import {Image as CloudImage, Transformation, CloudinaryContext} from "cloudinary-react";
 
 const fetchImages = (value) => {
     return (
@@ -17,6 +17,7 @@ const fetchImages = (value) => {
 
             >
                 {PRODUCTS_TABS.cosmetics[value].map((name, key) => {
+                    {console.log(name,'name')}
                     return <Grid.Column
                         className='product-column'
                         verticalAlign='middle'
@@ -32,9 +33,19 @@ const fetchImages = (value) => {
                             animated='fade'>
                             <Reveal.Content visible>
                                 <Grid.Column key={key}>
-                                    <Image
+                                    {/*<Image*/}
+                                    {/*className='products-images'*/}
+                                    {/*src={`${PRODUCTS_LINK}${value}/${name}`}/>*/}
+                                    <CloudImage
+                                        alt={""}
+                                        cloudName={CLOUD_NAME}
                                         className='products-images'
-                                        src={`${PRODUCTS_LINK}${value}/${name}`}/>
+                                        publicId={`${PRODUCTS}/${value}/${name}`}
+                                        // width="300"
+                                        // crop="scale"
+                                    />
+
+
                                 </Grid.Column>
                             </Reveal.Content>
                             <Reveal.Content
@@ -64,7 +75,7 @@ const createPanes = products => {
         {
             menuItem: products.subTabNames.fillers,
             render:
-                () => <Tab.Pane attached={false} >{fetchImages('fillers')}</Tab.Pane>
+                () => <Tab.Pane attached={false}>{fetchImages('fillers')}</Tab.Pane>
         }
         ,
         {
@@ -84,9 +95,24 @@ const TabContent = () => {
         <div>
             <Tab
                 className='cosmetics-left-tab'
-                menu={{fluid: innerWidth, vertical: innerWidth, tabular: innerWidth ,pointing: true , secondary: true}}
+                menu={{
+                    fluid: innerWidth,
+                    vertical: innerWidth,
+                    tabular: innerWidth,
+                    pointing: !innerWidth,
+                    secondary: !innerWidth
+                }}
                 panes={createPanes(products)}
             />
+
+            {/*<CloudImage cloudName="koruja" publicId="products/fillers/CELOSOME____.jpg" width="300" crop="scale"/>*/}
+            {/*// Or for more advanced usage:*/}
+            {/*// import {CloudinaryContext, Transformation} from 'cloudinary-react';*/}
+            {/*<CloudinaryContext cloudName="koruja">*/}
+            {/*<CloudImage publicId="BOTULAX_200U">*/}
+            {/*<Transformation width="200" crop="scale" angle="10"/>*/}
+            {/*</CloudImage>*/}
+            {/*</CloudinaryContext>*/}
 
         </div>
     );

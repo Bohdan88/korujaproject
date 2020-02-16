@@ -60,6 +60,8 @@ const About = () => {
                         })}
                     </List>
                 </Container>
+
+
             </Grid.Column>
             <Grid.Column
                 computer={8}

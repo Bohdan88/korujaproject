@@ -30,10 +30,16 @@
   }
 }
 
+
+
 .products-images, .product-column, .product-name {
   width: 250px;
   height: 250px;
   cursor: pointer;
+}
+
+.products-images {
+  background: #fff!important;
 }
 
 .product-name {
@@ -61,6 +67,10 @@
 
       div.ui.grid {
         background: #fff;
+
+        div.row > * {
+          margin-top: 5px!important;
+        }
       }
     }
   }
@@ -121,6 +131,5 @@
   .cosmetics-left-tab > .pointing.menu {
     border: none;
   }
-
 }
 
