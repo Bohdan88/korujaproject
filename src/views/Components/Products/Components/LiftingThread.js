@@ -33,11 +33,12 @@ const LiftingThread = () => {
                         // console.log(`${PRODUCTS}/${value}/${name}`, 'link')
                         return <Grid.Column
                             className={`products-lifting-column ${key}`}
+                            style={{ top: key === 0 && window.innerWidth > 768 && '-20px' }}
                             verticalAlign='middle'
                             key={key}
                             largeScreen={5}
-                            tablet={8}
-                            computer={8}
+                            tablet={7}
+                            computer={5}
                             widescreen={3}
                             mobile={16}
                             onMouseEnter={(props) => {

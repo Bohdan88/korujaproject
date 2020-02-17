@@ -27,12 +27,9 @@ const NavBar = () => {
         <div>
             <Sticky
                 className='nav-bar-sticky'
-                // offset={0}
-                // onUnstick={(props)=> console.log(props, 'props')}
             >
                 <Container
                     className='mobile-nav-bar-container'
-                    // className='nav-bar-container'
                     fluid>
                     <Menu
                         className="nav-bar-menu"

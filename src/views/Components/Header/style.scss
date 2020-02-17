@@ -1,8 +1,22 @@
-.banner{
+@import '../../../style/variables';
+
+//$icon-instagram-width: 40px;
+
+.banner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width:100%;
+  width: 100%;
+  margin-bottom: -$icon-instagram-width - 4px;
 }
 
+.icon-banner-instagram {
+  bottom: 25px;
+  left: 3%;
+}
 
+@media #{$mq-small} {
+  .icon-banner-instagram {
+    bottom: 25px;
+  }
+};

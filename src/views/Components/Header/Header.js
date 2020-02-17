@@ -1,17 +1,28 @@
 import React from 'react';
-import banner from '../../../assets/banner.jpg';
+import {Image as CloudImage} from "cloudinary-react";
 import './style.scss';
-import {
-    Image
-} from 'semantic-ui-react';
+
+
 const Header = () => {
     return (
         <div>
-            <Image
+            <CloudImage
+                cloudName={'koruja'}
                 className='banner'
-                src={banner}/>
+                publicId="koruja/assets/banner.jpg">
+            </CloudImage>
+            <a
+                href={'https://www.instagram.com/krj.export/'}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <CloudImage
+                    cloudName={'koruja'}
+                    className={'icon-instagram-default icon-banner-instagram'}
+                    publicId="koruja/assets/instagram0.2_v2ozw6">
+                </CloudImage>
+            </a>
         </div>
-    );
+    )
 };
-
 export default Header;

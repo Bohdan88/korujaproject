@@ -46,7 +46,7 @@ export const PRODUCTS_TABS = {
         "meso": ["HYARON" , "LUMI_EYE__" , "HIDR_INJ_" , "CELOSOME_AQUA_" , "DOTOTHY", "REGENOVUE_AQUASHINE"]
     },
     "lifting": {
-        "desc": ["liftkin_phi55d", "bomb_alp3nl", "gog_ll40lw", "nose_n9ks6k",  "mesh_kiznyu", "twin_gobvxx", "arrow_wb8og8", "Thread_leaflet.pdf-4_sok2wq"]
+        "desc": ["Thread_leaflet.pdf-4_sok2w" , "liftkin_phi5", "bomb_alp3n", "gog_ll40l", "nose_n9ks6",  "mesh_kizny", "twin_gobvx", "arrow_wb8og", "Thread_leaflet.pdf-4_t9jk2d"]
     }
 };
 

@@ -1,0 +1,25 @@
+
+
+$icon-instagram-width: 40px;
+$icon-instagram-height: 40px;
+
+// Breakpoints
+$bp-small: 767px;
+$bp-tablet: 991px;
+$bp-computer: 1199px;
+$bp-large: 1919px;
+$bp-widescreen: 1920px;
+
+// Media Queries
+$mq-small: "(max-width: #{$bp-small})";
+$mq-tablet: "(max-width: #{$bp-tablet})";
+$mq-computer: "(max-width: #{$bp-computer})";
+$mq-large: "(max-width: #{$bp-large})";
+$bp-widescreen: "(min-width: #{$bp-widescreen})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+
+@media #{$mq-small} {
+  $icon-instagram-width: $icon-instagram-width * 0.75!global;
+  $icon-instagram-height:  $icon-instagram-height * 0.75!global;
+}
