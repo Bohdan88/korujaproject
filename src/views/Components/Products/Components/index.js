@@ -1,3 +1,4 @@
 import TabContent from './TabContent';
+import LiftingThread from './LiftingThread';
 
-export default TabContent;
+export {TabContent, LiftingThread}

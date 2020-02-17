@@ -31,7 +31,6 @@
 }
 
 
-
 .products-images, .product-column, .product-name {
   width: 250px;
   height: 250px;
@@ -39,7 +38,7 @@
 }
 
 .products-images {
-  background: #fff!important;
+  background: #fff !important;
 }
 
 .product-name {
@@ -69,7 +68,7 @@
         background: #fff;
 
         div.row > * {
-          margin-top: 5px!important;
+          margin-top: 5px !important;
         }
       }
     }
@@ -93,6 +92,187 @@
 .products-tab {
   display: flex;
   flex-direction: column;
+}
+
+
+// lifting thread
+
+.products-lifting-column {
+  margin-left: 2%;
+}
+
+.products-lifting-image {
+  //height: 400px;
+}
+
+.products-lifting-thread {
+  //background: linear-gradient(0deg, rgba(147, 193, 190, 0.8) 0%, white 13%);
+  //padding-bottom: 96px;
+}
+
+.products-lifting-modal {
+  width: 35% !important;
+  //background: transparent !important;
+  box-shadow: none !important;
+  //height: 100% !important;
+
+}
+
+.products-lifting-modal-image {
+  width: 100%;
+  //height: 10% !important;
+
+}
+
+.products-lifting-modal-content {
+  padding: 0px !important;
+  background: transparent !important;
+  //height: 10% !important;
+  //height: 800px !important;
+}
+
+.products-lifting-modal-button-close {
+  background: transparent !important;
+  //color:white!important;
+  position: relative;
+  right: -10px;
+  top: 140px;
+  zIndex: 50px;
+  margin: 0px;
+  float: right;
+}
+
+.products-lifting-button-expand {
+  position: relative !important;
+  top: 105px !important;
+  float: right;
+  right: 5px;
+  //background: black!important;
+  padding: 0px !important;
+  margin: 0px !important;
+  visibility: visible !important;
+  display: block !important;
+  //transition: transform 0.2s!important;
+  //transition-duration: 0.4s!important;
+  //transform: translate3d(0.328px, 0.546px, 0px) !important;
+  //transition-property: opacity, transform!important;
+}
+
+.products-lifting-image {
+  float: right !important;
+}
+
+//
+//.products-lifting-button-expand:hover {
+//  transition: transform 0.2s!important;
+//  transition-duration: 0.4s!important;
+//  transform: translate3d(0.328px, 0.546px, 0px) !important;
+//  transition-property: opacity, transform!important;
+//}
+
+//.products-lifting-button-expand {
+//  position: absolute;
+//  //top: 45px;
+//  //right: 20px;
+//  top: 50px;
+//  right: 5px;
+//  margin: 0px;
+//  // bottom: 20,
+//  background: transparent!important;
+//}
+
+@media only screen and (min-width: 3000px) {
+  .products-lifting-button-expand{
+    display:none!important;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  //.products-lifting-button-expand {
+  //  float: right;
+  //  display: block;
+  //  visibility: hidden;
+  //  visibility: visible;
+  //  top: 105px !important;
+  //}
+  //.products-lifting-modal-button-close {
+  //  top:185px!important;
+  //}
+}
+
+
+//@media only screen and (min-width: )
+
+@media only screen and (min-width: 1920px) and (max-width: 2559px) {
+  .products-lifting-button-expand {
+    float: right;
+    display: block;
+    visibility: hidden;
+    top: 50px;
+    /* padding: 20px!important; */
+    //background: black!important;
+    visibility: visible;
+    top: 75px !important;
+    //margin-right: 47px!important;
+  }
+
+  //.products-lifting-modal-button-close {
+  //  top:160px!important;
+  //}
+}
+
+@media only screen and (min-width: 1920px) {
+  .products-lifting-grid {
+    justify-content: center !important;
+  }
+
+  .products-tab > div > .secondary.menu {
+    font-size: 20px;
+  }
+
+  .products-lifting-image {
+    //height: 450px;
+  }
+
+
+  .products-lifting-modal-button-close {
+    cursor: pointer;
+    position: absolute;
+    top: -2.5rem!important;
+    right: -2.5rem!important;
+    z-index: 1!important;
+    opacity: .8!important;
+    font-size: 1.25em!important;
+    color: #fff!important;
+    width: 2.25rem!important;
+    height: 15.25rem!important;
+    padding: .625rem 0 0 0!important;
+  }
+
+  //.products-lifting-button-expand {
+  //  top: 75px!important;
+  //  //float:right;
+  //  right: 10px;
+  //  margin: 0;
+  //}
+
+
+}
+
+
+
+@media only screen and (max-width: 1199px) {
+  .products-lifting-modal-content {
+    padding: 0px !important;
+    background: transparent !important;
+    height: 800px !important;
+  }
+
+  .products-lifting-modal-button-close {
+    top: 80px;
+    zIndex: 50px;
+  }
+
 }
 
 @media only screen and (max-width: 992px) {

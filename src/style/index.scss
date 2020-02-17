@@ -16,8 +16,8 @@ a {
   text-decoration: none; /* no underline */
 }
 
-h2{
-  font-size:25px!important;
+h2 {
+  font-size: 25px !important;
 }
 
 .float-left {
@@ -28,3 +28,9 @@ h2{
   float: right;
 }
 
+
+@media only screen and (min-width: 1920px) {
+  h2 {
+    font-size: 35px !important;
+  }
+}

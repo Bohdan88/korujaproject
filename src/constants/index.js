@@ -44,6 +44,9 @@ export const PRODUCTS_TABS = {
         "toxins" : ["NABOTA_100UU", "INNOTOX_50U", "HUTOX_100U", "MEDITOXIN_100U", "BOTULAX_200U", "NEURONOX_100U", "BOTULAX_100"],
         "fillers": ["ELOHA", "HYAFILIA____", "CELOSOME____", "REPLENGEN_", "NEURAMIS_", "DERMALAX___", "MELINE_"],
         "meso": ["HYARON" , "LUMI_EYE__" , "HIDR_INJ_" , "CELOSOME_AQUA_" , "DOTOTHY", "REGENOVUE_AQUASHINE"]
+    },
+    "lifting": {
+        "desc": ["liftkin_phi55d", "bomb_alp3nl", "gog_ll40lw", "nose_n9ks6k",  "mesh_kiznyu", "twin_gobvxx", "arrow_wb8og8", "Thread_leaflet.pdf-4_sok2wq"]
     }
 };
 
