@@ -18,7 +18,7 @@ export const LangProvider = (props) => {
         if (selectedLang) {
             setLang(selectedLang);
         }
-    }, [lang])
+    }, [lang]);
 
     const switchLang = ln => {
         setLang(ln);
@@ -76,7 +76,7 @@ const langData = {
 
         },
         footer: {
-            company: ['2004-2020 Export Company KoRuJa "Direct Korea/ Direct Japan"'],
+            company: ['Export Company KoRuJa "Direct Korea/ Direct Japan"'],
             info: ['CONTACT INFO'],
             office: ['Head Office: '],
             mail: ['Email']
@@ -127,7 +127,7 @@ const langData = {
 
         },
         footer: {
-            company: ['2004-2020  Экспортная компания KoRuJa "Прямая Корея/Прямая Япония"'],
+            company: ['Экспортная компания KoRuJa "Прямая Корея/Прямая Япония"'],
             info: ['КОНТАКТНАЯ ИНФОРМАЦИЯ'],
             office: ['Главный Офис: '],
             mail: ['Эл. почта'],
@@ -138,4 +138,4 @@ const langData = {
             language: 'ru'
         },
     },
-}
+};

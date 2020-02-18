@@ -14,14 +14,13 @@ import {
     NAME_LENGTH,
     MINIMUM_MESSAGE_LENGTH,
     MAX_MESSAGE_LENGTH,
-    EMAIL_VALIDATION,
     SERVICE_ID
 } from '../../../constants';
 import LangContext from '../../../context/LangContext';
 import * as emailjs from 'emailjs-com'
 import Swal from 'sweetalert2';
 
-
+const EMAIL_VALIDATION = /(?!.*\.{2})^([a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+(\.[a-z\d!#$%&'*+\-\/=?^_`{|}~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]+)*|"((([\t]*\r\n)?[\t]+)?([\x01-\x08\x0b\x0c\x0e-\x1f\x7f\x21\x23-\x5b\x5d-\x7e\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|\\[\x01-\x09\x0b\x0c\x0d-\x7f\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))*(([\t]*\r\n)?[\t]+)?")@(([a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\d\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.)+([a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]|[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF][a-z\d\-._~\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]*[a-z\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])\.?$/i;
 const checkEmail = value => EMAIL_VALIDATION.test(value);
 const checkName = value => value && value.length >= NAME_LENGTH;
 const checkMessage = value => value && value.length > MINIMUM_MESSAGE_LENGTH && value.length < MAX_MESSAGE_LENGTH;
@@ -96,6 +95,7 @@ const Contacts = () => {
                     />
                 </Grid.Column>
                 <Grid.Column
+                    className='contacts-form-column'
                     computer={8}
                     mobile={16}
                 >
@@ -106,7 +106,6 @@ const Contacts = () => {
                         {contacts.header}
                     </Header>
                     <Form
-                        // ref={nameStatus}
                         className='form-contacts'
                     >
                         <Form.Field
@@ -153,7 +152,6 @@ const Contacts = () => {
 
                             />
                         </Form.Field>
-
                         <div className='contacts-message-length'>{MAX_MESSAGE_LENGTH - form.message.length}</div>
                         <Form.TextArea
                             required

@@ -1,15 +1,8 @@
 import React, {useContext} from 'react';
-import {
-    Grid,
-    Image,
-    Container,
-    Header,
-    List
-} from 'semantic-ui-react';
-import {
-    LIST_DESCRIPTION
-} from '../../../constants/';
-import aboutImg from '../../../assets/about.jpg';
+import {Grid, Container, Header, List} from 'semantic-ui-react';
+import {ABOUT_PUBLIC_ID, CLOUD_NAME} from '../../../constants/';
+import {Image as CloudImage} from 'cloudinary-react';
+// import aboutImg from '../../../assets/about.jpg';
 import './style.scss';
 import LangContext from '../../../context/LangContext';
 
@@ -68,7 +61,13 @@ const About = () => {
                 mobile={16}
                 stretched
                 className='second-column-about'>
-                <Image src={aboutImg}/>
+                {/*<Image src={aboutImg}/>*/}
+                <CloudImage
+                    alt={""}
+                    className='about-image'
+                    cloudName={CLOUD_NAME}
+                    publicId={ABOUT_PUBLIC_ID}
+                />
             </Grid.Column>
         </Grid>
     );

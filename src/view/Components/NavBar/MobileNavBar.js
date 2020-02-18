@@ -1,20 +1,14 @@
 import React, {useContext, useState} from 'react';
-import {NAV_BAR} from "../constants";
 import './style.css';
-import {
-    Image,
-    List,
-} from "semantic-ui-react";
-import {
-    GB_FLAG_LINK,
-    RU_FLAG_LINK
-} from '../constants';
-import LangContext from '../context/LangContext';
+import { Image, List} from "semantic-ui-react";
+import { GB_FLAG_LINK, RU_FLAG_LINK} from '../../../constants';
+import LangContext from '../../../context/LangContext';
+import routes from '../../../routes';
 
 const MobileMenu = () => {
     const [menu, toggleMenu] = useState(false);
     const [flag, switchFlag] = useState(true);
-    const {switchLang, lang} = useContext(LangContext);
+    const {switchLang} = useContext(LangContext);
     const currentFlag = flag ? GB_FLAG_LINK : RU_FLAG_LINK;
     const currentLanguage = flag ? 'en-US' : 'ru-RU';
 
@@ -34,14 +28,13 @@ const MobileMenu = () => {
             </div>
 
             <div className={menuClass}>
-                {NAV_BAR.map((item, key) => {
+                {routes.map((item, key) => {
                     return <List.Item
                         name={'error'}
                         key={key}
                         as='a'
                         href={item.path}
                         className='mobile-sidebar-menu'
-                        // className={menuClass}
                     >
                         <List.Icon name={item.icon}/>
                         <List.Content>{item.name[flag ? 0 : 1]}</List.Content>
@@ -54,7 +47,7 @@ const MobileMenu = () => {
                         className='mobile-nav-bar-language'
                         src={currentFlag}
                         onClick={() => {
-                            switchFlag(!flag)
+                            switchFlag(!flag);
                             switchLang(currentLanguage)
                         }}
                     />

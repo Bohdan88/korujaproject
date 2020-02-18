@@ -1,3 +1,3 @@
 import NavBar from './NavBar.js';
 
-export default NavBar;
+export default NavBar

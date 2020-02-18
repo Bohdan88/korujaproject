@@ -1,0 +1,27 @@
+@import '../../../style/variables';
+
+
+.scroll-button {
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 101;
+  cursor: pointer;
+  background: #3F729B !important;
+  color: #fff !important;
+  transition: .3s all ease-in-out!important;
+}
+
+.scroll-button:hover {
+  filter: brightness(90%)
+}
+
+
+@media #{$mq-small} {
+  scroll-button {
+    display: none!important;
+  }
+}
+
+

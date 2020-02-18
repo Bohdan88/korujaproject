@@ -1,7 +1,7 @@
-import React, {useContext, useState, useEffect} from 'react';
-import {NAV_BAR} from "../constants";
+import React, {useContext, useState} from 'react';
+import {NAV_BAR} from "../../../constants";
 import './style.css';
-import logo from '../assets/image2.svg';
+import logo from '../../../assets/image2.svg';
 import {
     Menu,
     Container,
@@ -12,9 +12,10 @@ import {
 import {
     GB_FLAG_LINK,
     RU_FLAG_LINK
-} from '../constants';
-import LangContext from '../context/LangContext';
+} from '../../../constants';
+import LangContext from '../../../context/LangContext';
 import MobileMenu from './MobileNavBar';
+import routes from "../../../routes";
 
 const NavBar = () => {
     const [flag, switchFlag] = useState(true);
@@ -25,22 +26,18 @@ const NavBar = () => {
 
     return (
         <div>
-            <Sticky
-                className='nav-bar-sticky'
-            >
+            <Sticky className='nav-bar-sticky'>
                 <Container
                     className='mobile-nav-bar-container'
                     fluid>
                     <Menu
                         className="nav-bar-menu"
                         borderless>
-
                         <MobileMenu/>
-
                         <Menu.Menu position="left">
                             <Menu.Item
                                 as={'a'}
-                                href="/"
+                                href="/#home"
                                 className="logo-container"
                             >
                                 <Image src={logo}/>
@@ -48,15 +45,14 @@ const NavBar = () => {
                             </Menu.Item>
                         </Menu.Menu>
                         <Menu.Menu position={"right"}>
-                            {NAV_BAR.map((item, key) => {
+                            {routes.map((item, key) => {
                                 return <Menu.Item
                                     key={key}
                                     as='a'
                                     href={item.path}
                                     className="nav-bar-menu-items"
                                 >
-                                        {item.name[flag ? 0 : 1]}
-                                    {/*{item.name[currentLanguage.slice(0,2)]}*/}
+                                    {item.name[flag ? 0 : 1]}
                                 </Menu.Item>
 
                             })}
@@ -66,7 +62,7 @@ const NavBar = () => {
                                     className='nav-bar-language'
                                     src={currentFlag}
                                     onClick={() => {
-                                        switchFlag(!flag)
+                                        switchFlag(!flag);
                                         switchLang(currentLanguage)
                                     }}
                                 />

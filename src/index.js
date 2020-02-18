@@ -1,28 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './views/Components/Header/';
-import Contacts from './views/Components/Contacts/';
-import Footer from './views/Components/Footer/';
-import About from './views/Components/About';
-import Products from './views/Components/Products';
+import {Header, Contacts, Footer, About, Products, ScrollButton, NavBar} from './view/Components';
 import {createBrowserHistory} from 'history';
-import NotFound from './views/Components/NotFound/';
-import NavBar from './shared/';
-import {NAV_BAR} from './constants';
-import {Sticky} from 'semantic-ui-react';
-import {Link, Switch, Route, Router} from 'react-router-dom';
+import {Switch, Route, HashRouter as Router} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
-// styles
-import 'sweetalert2/src/sweetalert2.scss'
-import './style/index.scss';
-import 'semantic-ui-css/semantic.min.css'
-
-
 import {LangProvider} from './context/LangContext';
+import routes from './routes';
+
+// styles
+import './style/index.scss';
+import 'semantic-ui-css/semantic.min.css';
+import 'sweetalert2/src/sweetalert2.scss';
+
 
 const hist = createBrowserHistory();
-
-
 const routing = (
     <LangProvider>
         <div>
@@ -30,23 +21,17 @@ const routing = (
                 <div>
                     <NavBar/>
                     <Switch>
-                        {NAV_BAR.map((item, key) => {
-                            return item.path === "/" ?
-                                <Route exact
-                                       key={key}
-                                       path={item.path}
-                                       component={item.component}
-                                /> :
-
-                                <Route
-                                    key={key}
-                                    path={item.path}
-                                    component={item.component}/>
-                        })}
-                        <Route component={NotFound}/>
+                        {routes.map((item, key) =>
+                            <Route
+                                key={key}
+                                path={item.path}
+                                component={item.component}/>
+                        )}
                     </Switch>
                 </div>
             </Router>
+            <ScrollButton/>
+            <Header/>
             <About/>
             <Products/>
             <Contacts/>

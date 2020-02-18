@@ -5,7 +5,9 @@ import './style.scss';
 
 const Header = () => {
     return (
-        <div>
+        <div
+            id="home"
+        >
             <CloudImage
                 cloudName={'koruja'}
                 className='banner'

@@ -1,6 +1,10 @@
 
+.contacts-form-column {
+    margin: auto;
+}
+
 .header-contacts {
-    padding-top: 50px !important;
+    padding-bottom: 25px !important;
 }
 
 .header-contacts::after {
@@ -14,15 +18,9 @@
 }
 
 #contacts {
-    /*padding-top: 1rem!important;*/
-    /*background: linear-gradient(0deg, rgba(255,255,255,1) 87%, rgba(147,193,190,1) 100%);*/
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(234, 236, 238, 1) 0%, rgba(219, 231, 231, 1) 92%, rgba(147, 193, 190, 1) 100%);
-    /*// background: linear-gradient(0 deg, rgba(2, 0, 36, 1) 0 %, rgba(234, 236, 238, 1) 0 %, rgba(219, 231, 231, 1) 77 %, rgba(147, 193, 190, 1) 100 %);*/
-    /*background: linear-gradient(0deg, rgba(255,255,255,1) 87%, rgba(133,172,170,0.01) 100%);*/
-
 }
 
-/*background: linear-gradient(0deg, rgba(255,255,255,1) 87%, rgba(147,193,190,1) 100%);*/
 
 .contacts-image-column {
     padding: 0px !important;
@@ -43,48 +41,49 @@
     margin-top: 30px !important;
 }
 
-.form-field-name{
+.form-field-name {
     padding-bottom: 20px;
 }
 
 .contacts-message-length {
     display: flex;
     position: relative;
-     top: 17px;
+    top: 17px;
     right: 2px;
     opacity: 0.7;
     justify-content: flex-end;
 }
 
 .contacts-modal {
-    transition-delay: 12s!important;
-    transition-timing-function: ease-in!important;
-    width: 30%!important;
+    transition-delay: 12s !important;
+    transition-timing-function: ease-in !important;
+    width: 30% !important;
 }
 
 .contacts-modal-header {
-    display: flex!important;
+    display: flex !important;
     justify-content: center;
 }
 
 
 .contacts-modal-content {
-    font-size: 20px!important;
-    text-align: center!important;
+    font-size: 20px !important;
+    text-align: center !important;
 
 }
 
 
 /*.alert-container-class {*/
-    /*width:80%!important;*/
+/*width:80%!important;*/
 /*}*/
 
-@media screen and (max-width: 1199px)  {
+@media screen and (max-width: 1199px) {
     .contacts-modal {
-        width: 50%!important;
+        width: 50% !important;
     }
 
 }
+
 @media screen and (max-width: 768px) {
 
     .form-contacts, .header-contacts {
