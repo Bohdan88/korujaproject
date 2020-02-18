@@ -23,7 +23,7 @@ const LiftingThread = () => {
                             animation='zoom'
                             transitionOnMount={true}
                             unmountOnHide={true}
-                            duration={1000}>
+                            duration={1500}>
                             <Grid.Column
                                 className={`products-lifting-column ${key}`}
                                 style={{top: key === 0 && window.innerWidth > 768 && '-20px'}}
@@ -69,15 +69,14 @@ const LiftingThread = () => {
 
     const setModalImage = (value, imageKey) => {
         return PRODUCTS_TABS.lifting.desc.map((name, key) => {
-            if (imageKey === key) {
-                return <CloudImage
-                    key={key}
-                    alt={""}
-                    cloudName={CLOUD_NAME}
-                    className='products-lifting-modal-image'
-                    publicId={`${PRODUCTS}/${value}/${name}`}
-                />
-            }
+            return imageKey === key && <CloudImage
+                key={key}
+                alt={""}
+                cloudName={CLOUD_NAME}
+                className='products-lifting-modal-image'
+                publicId={`${PRODUCTS}/${value}/${name}`}
+            />
+
         })
     };
 

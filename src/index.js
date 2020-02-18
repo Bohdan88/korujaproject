@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Header, Contacts, Footer, About, Products, ScrollButton, NavBar} from './view/Components';
 import {createBrowserHistory} from 'history';
-import {Switch, Route, HashRouter as Router} from 'react-router-dom';
+import {Switch, Route, Router} from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 import {LangProvider} from './context/LangContext';
 import routes from './routes';

@@ -23,7 +23,7 @@ const fetchImages = (value) => {
                         animation='zoom'
                         transitionOnMount={true}
                         // onStart={(e, data) => console.log(data)}
-                        duration={1000}>
+                        duration={1500}>
                         <Grid.Column
                             className='products-column'
                             verticalAlign='middle'
@@ -72,20 +72,36 @@ const createPanes = products => {
     return [
         {
             menuItem: products.subTabNames.toxins,
-            render: () => <Tab.Pane attached={false}>{fetchImages(PRODUCTS_TOXINS)}</Tab.Pane>
+            render: () => <Tab.Pane attached={false}>
+                <Transition
+                    visible={true}
+                    animation='fade'
+                    transitionOnMount={true}
+                    duration={1500}>
+                    {fetchImages(PRODUCTS_TOXINS)}
+                </Transition>
+            </Tab.Pane>
         },
         {
             menuItem: products.subTabNames.fillers,
             render:
-                () => <Tab.Pane attached={false}>{fetchImages(PRODUCTS_FILLERS)}</Tab.Pane>
-        }
-        ,
+                () => <Tab.Pane attached={false}>
+                    <Transition
+                        visible={true}
+                        animation='fade'
+                        transitionOnMount={true}
+                        duration={1500}>
+                        {fetchImages(PRODUCTS_FILLERS)}
+                    </Transition>
+                </Tab.Pane>
+        },
         {
             menuItem: products.subTabNames.meso,
             render:
-                () => <Tab.Pane attached={false}>{fetchImages(PRODUCTS_MESO)}</Tab.Pane>
-        }
-        ,
+                () => <Tab.Pane attached={false}>
+                    {fetchImages(PRODUCTS_MESO)}
+                </Tab.Pane>
+        },
     ]
 };
 

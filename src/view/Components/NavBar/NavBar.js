@@ -1,5 +1,4 @@
 import React, {useContext, useState} from 'react';
-import {NAV_BAR} from "../../../constants";
 import './style.css';
 import logo from '../../../assets/image2.svg';
 import {
@@ -19,7 +18,7 @@ import routes from "../../../routes";
 
 const NavBar = () => {
     const [flag, switchFlag] = useState(true);
-    const {switchLang, lang} = useContext(LangContext);
+    const {switchLang} = useContext(LangContext);
     //
     const currentFlag = flag ? GB_FLAG_LINK : RU_FLAG_LINK;
     const currentLanguage = flag ? 'en-US' : 'ru-RU';
