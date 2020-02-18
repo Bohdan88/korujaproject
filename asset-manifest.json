@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/koruja/static/css/main.199776d8.chunk.css",
+    "main.js": "/koruja/static/js/main.1744a385.chunk.js",
+    "main.js.map": "/koruja/static/js/main.1744a385.chunk.js.map",
+    "runtime-main.js": "/koruja/static/js/runtime-main.3f03a6a3.js",
+    "runtime-main.js.map": "/koruja/static/js/runtime-main.3f03a6a3.js.map",
+    "static/css/2.587a5ddd.chunk.css": "/koruja/static/css/2.587a5ddd.chunk.css",
+    "static/js/2.bee4c090.chunk.js": "/koruja/static/js/2.bee4c090.chunk.js",
+    "static/js/2.bee4c090.chunk.js.map": "/koruja/static/js/2.bee4c090.chunk.js.map",
+    "index.html": "/koruja/index.html",
+    "precache-manifest.7d6efcbeaaa3c402b0a6919c8c7a8782.js": "/koruja/precache-manifest.7d6efcbeaaa3c402b0a6919c8c7a8782.js",
+    "service-worker.js": "/koruja/service-worker.js",
+    "static/css/2.587a5ddd.chunk.css.map": "/koruja/static/css/2.587a5ddd.chunk.css.map",
+    "static/css/main.199776d8.chunk.css.map": "/koruja/static/css/main.199776d8.chunk.css.map",
+    "static/js/2.bee4c090.chunk.js.LICENSE.txt": "/koruja/static/js/2.bee4c090.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/koruja/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/image2.svg": "/koruja/static/media/image2.50265e9e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3f03a6a3.js",
+    "static/css/2.587a5ddd.chunk.css",
+    "static/js/2.bee4c090.chunk.js",
+    "static/css/main.199776d8.chunk.css",
+    "static/js/main.1744a385.chunk.js"
+  ]
+}
