@@ -24,7 +24,7 @@ const routes = [
     },
     {
         name: ["КОНТАКТЫ", "CONTACTS"],
-        path: "/#contacts",
+        path: "#contacts",
         icon: "phone",
         component: Contacts
     },
