@@ -68,7 +68,24 @@
 }
 
 
-@media #{$mq-small 767px} {
+@media #{$mq-computer} {
+  .header-contacts {
+    padding-top: 2rem;
+  }
+
+  .form-contacts {
+    margin: auto!important;
+
+  }
+}
+
+@media #{$mq-tablet} {
+  .footer-contacts-info {
+    font-size: 13px;
+  }
+}
+
+@media #{$mq-small} {
   .footer-menu-column, .footer-container-desc, .footer-column-logo {
     display: none !important;
   }
@@ -85,5 +102,9 @@
   .footer-contacts-info {
     display: flex;
     flex-direction: column;
+  }
+
+  .footer-mobile-phones {
+    justify-content: center;
   }
 }

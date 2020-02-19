@@ -10,7 +10,7 @@
   cursor: pointer;
   background: #3F729B !important;
   color: #fff !important;
-  transition: .3s all ease-in-out!important;
+  transition: .3s all ease-in-out !important;
 }
 
 .scroll-button:hover {
@@ -18,9 +18,10 @@
 }
 
 
-@media #{$mq-small} {
+@media only screen and (max-width: 767px) {
   scroll-button {
-    display: none!important;
+    display: none !important;
+    visibility: hidden!important;
   }
 }
 

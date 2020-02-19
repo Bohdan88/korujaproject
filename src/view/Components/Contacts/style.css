@@ -72,14 +72,17 @@
 
 }
 
-
-/*.alert-container-class {*/
-/*width:80%!important;*/
-/*}*/
-
 @media screen and (max-width: 1199px) {
     .contacts-modal {
         width: 50% !important;
+    }
+
+    .header-contacts {
+        padding-top: 2rem!important;
+    }
+
+    .form-contacts {
+        top: -2rem;
     }
 
 }
@@ -87,7 +90,7 @@
 @media screen and (max-width: 768px) {
 
     .form-contacts, .header-contacts {
-        padding-top: 20px !important;
+        padding-top: 1.5rem !important;
     }
 
     .contacts-modal {

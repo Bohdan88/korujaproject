@@ -13,7 +13,7 @@ const Header = () => {
     const scrollFunction = () => {
         if (scrollRef.current) {
             scrollRef.current.children[0].style.visibility =
-                scrollRef.current.closest("body").scrollTop > (window.innerHeight / 2) ? "visible" : "hidden"
+                scrollRef.current.closest("body").scrollTop < (window.innerHeight / 2) || window.innerWidth < 768 ? "hidden" : "visible"
         }
     };
 

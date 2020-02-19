@@ -98,9 +98,9 @@ const Footer = () => {
                     </Menu>
                 </Grid.Column>
                 <Grid.Column
-                    tablet={5}
+                    tablet={6}
                     widescreen={5}
-                    largescreen={5}
+                    largescreen={6}
                     computer={5}
                     mobile={16}
                 >

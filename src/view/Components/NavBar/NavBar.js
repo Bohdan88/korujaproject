@@ -33,7 +33,9 @@ const NavBar = () => {
                         className="nav-bar-menu"
                         borderless>
                         <MobileMenu/>
-                        <Menu.Menu position="left">
+                        <Menu.Menu
+                        className='logo-menu-item'
+                        >
                             <Menu.Item
                                 as={'a'}
                                 href="/#home"

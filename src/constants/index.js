@@ -1,5 +1,4 @@
 // links
-export const PRODUCTS_LINK = 'https://res.cloudinary.com/koruja/image/upload/v1581296383/products/';
 export const CONTACTS_LINK = 'https://res.cloudinary.com/koruja/image/upload/v1581307515/koruja/assets/CONTACTS.jpg';
 export const GB_FLAG_LINK = 'https://res.cloudinary.com/koruja/image/upload/v1581557031/koruja/assets/gb.png';
 export const RU_FLAG_LINK = 'https://res.cloudinary.com/koruja/image/upload/v1581644536/koruja/assets/RU_p32pbt.png';
@@ -16,8 +15,8 @@ export const PRODUCTS_MESO = 'meso';
 export const PRODUCTS_FILLERS = 'fillers';
 export const PRODUCTS_TABS = {
     "cosmetics": {
-        "toxins" : ["NABOTA_100UU", "INNOTOX_50U", "HUTOX_100U", "MEDITOXIN_100U", "BOTULAX_200U", "NEURONOX_100U", "BOTULAX_100"],
-        "fillers": ["ELOHA", "HYAFILIA____", "CELOSOME____", "REPLENGEN_", "NEURAMIS_", "DERMALAX___", "MELINE_"],
+        "toxins" : ["NABOTA_100U", "INNOTOX_50U", "HUTOX_100U", "MEDITOXIN_100U", "BOTULAX_200U", "NEURONOX_100U", "BOTULAX_100"],
+        "fillers": ["ELOHA", "HYAFILIA____", "CELOSOME____", "REPLENGEN_", "NEURAMIS___", "DERMALAX___", "MELINE_"],
         "meso": ["HYARON" , "LUMI_EYE__" , "HIDR_INJ_" , "CELOSOME_AQUA_" , "DOTOTHY", "REGENOVUE_AQUASHINE"]
     },
     "lifting": {

@@ -11,7 +11,7 @@ const Header = () => {
             <CloudImage
                 cloudName={'koruja'}
                 className='banner'
-                publicId="koruja/assets/banner.jpg">
+                publicId="koruja/assets/bannerr.jpg">
             </CloudImage>
             <a
                 href={'https://www.instagram.com/krj.export/'}
