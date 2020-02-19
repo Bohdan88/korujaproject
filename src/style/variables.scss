@@ -26,7 +26,12 @@ $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
   $h2-size: $h2-size * 1.4!global;
 }
 
-@media #{$mq-small} {
-  $icon-instagram-width: $icon-instagram-width * 0.5!global;
-  $icon-instagram-height:  $icon-instagram-height * 0.5!global;
-}
+//@media #{$mq-large} {
+//  $icon-instagram-width: $icon-instagram-width!global;
+//  $icon-instagram-height:  $icon-instagram-height!global;
+//}
+
+//@media #{$mq-small} {
+//  $icon-instagram-width: $icon-instagram-width * 0.5!global;
+//  $icon-instagram-height:  $icon-instagram-height * 0.5!global;
+//}
