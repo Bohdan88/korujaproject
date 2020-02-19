@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/korujja/static/css/main.199776d8.chunk.css",
-    "main.js": "/korujja/static/js/main.020f4a5a.chunk.js",
-    "main.js.map": "/korujja/static/js/main.020f4a5a.chunk.js.map",
-    "runtime-main.js": "/korujja/static/js/runtime-main.71a517da.js",
-    "runtime-main.js.map": "/korujja/static/js/runtime-main.71a517da.js.map",
-    "static/css/2.119f2741.chunk.css": "/korujja/static/css/2.119f2741.chunk.css",
-    "static/js/2.be2ecde3.chunk.js": "/korujja/static/js/2.be2ecde3.chunk.js",
-    "static/js/2.be2ecde3.chunk.js.map": "/korujja/static/js/2.be2ecde3.chunk.js.map",
-    "index.html": "/korujja/index.html",
-    "precache-manifest.12376d09144df88bc918e6b73d35dcf7.js": "/korujja/precache-manifest.12376d09144df88bc918e6b73d35dcf7.js",
-    "service-worker.js": "/korujja/service-worker.js",
-    "static/css/2.119f2741.chunk.css.map": "/korujja/static/css/2.119f2741.chunk.css.map",
-    "static/css/main.199776d8.chunk.css.map": "/korujja/static/css/main.199776d8.chunk.css.map",
-    "static/js/2.be2ecde3.chunk.js.LICENSE.txt": "/korujja/static/js/2.be2ecde3.chunk.js.LICENSE.txt",
-    "static/media/semantic.min.css": "/korujja/static/media/outline-icons.ef60a4f6.woff",
-    "static/media/image2.svg": "/korujja/static/media/image2.50265e9e.svg"
+    "main.css": "/korujatest/static/css/main.199776d8.chunk.css",
+    "main.js": "/korujatest/static/js/main.801284e6.chunk.js",
+    "main.js.map": "/korujatest/static/js/main.801284e6.chunk.js.map",
+    "runtime-main.js": "/korujatest/static/js/runtime-main.63576b9f.js",
+    "runtime-main.js.map": "/korujatest/static/js/runtime-main.63576b9f.js.map",
+    "static/css/2.7981e37a.chunk.css": "/korujatest/static/css/2.7981e37a.chunk.css",
+    "static/js/2.698f450e.chunk.js": "/korujatest/static/js/2.698f450e.chunk.js",
+    "static/js/2.698f450e.chunk.js.map": "/korujatest/static/js/2.698f450e.chunk.js.map",
+    "index.html": "/korujatest/index.html",
+    "precache-manifest.d874c957ae197f41d9ae77f92510f2c3.js": "/korujatest/precache-manifest.d874c957ae197f41d9ae77f92510f2c3.js",
+    "service-worker.js": "/korujatest/service-worker.js",
+    "static/css/2.7981e37a.chunk.css.map": "/korujatest/static/css/2.7981e37a.chunk.css.map",
+    "static/css/main.199776d8.chunk.css.map": "/korujatest/static/css/main.199776d8.chunk.css.map",
+    "static/js/2.698f450e.chunk.js.LICENSE.txt": "/korujatest/static/js/2.698f450e.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/korujatest/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/image2.svg": "/korujatest/static/media/image2.50265e9e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.71a517da.js",
-    "static/css/2.119f2741.chunk.css",
-    "static/js/2.be2ecde3.chunk.js",
+    "static/js/runtime-main.63576b9f.js",
+    "static/css/2.7981e37a.chunk.css",
+    "static/js/2.698f450e.chunk.js",
     "static/css/main.199776d8.chunk.css",
-    "static/js/main.020f4a5a.chunk.js"
+    "static/js/main.801284e6.chunk.js"
   ]
 }
