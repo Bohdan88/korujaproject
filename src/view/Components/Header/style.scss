@@ -15,6 +15,12 @@
   left: 3%;
 }
 
+@media #{$mq-large} {
+  .icon-banner-instagram {
+    width: 30px!important;
+    height: 30px!important;
+  }
+}
 
 @media #{$mq-small} {
   .icon-banner-instagram {
