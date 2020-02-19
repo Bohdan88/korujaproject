@@ -6,25 +6,25 @@ import Contacts from "../view/Components/Contacts";
 const routes = [
     {
         name: ["ГЛАВНАЯ", "HOME"],
-        path: "/#home",
+        path: "/korujaproject/#home",
         icon: "home",
         component: Header
     },
     {
         name: ["О НАС", "ABOUT US"],
-        path: "/#about",
+        path: "/korujaproject/#about",
         icon: "bolt",
         component: About
     },
     {
         name: ["ПРОДУКЦИЯ", "PRODUCTS"],
-        path: "/#products",
+        path: "/korujaproject/#products",
         icon: "info",
         component: Products
     },
     {
         name: ["КОНТАКТЫ", "CONTACTS"],
-        path: "#contacts",
+        path: "/korujaproject/#contacts",
         icon: "phone",
         component: Contacts
     },
