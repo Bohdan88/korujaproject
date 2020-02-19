@@ -27,6 +27,6 @@ $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 }
 
 @media #{$mq-small} {
-  $icon-instagram-width: $icon-instagram-width * 0.75!global;
-  $icon-instagram-height:  $icon-instagram-height * 0.75!global;
+  $icon-instagram-width: $icon-instagram-width * 0.5!global;
+  $icon-instagram-height:  $icon-instagram-height * 0.5!global;
 }

@@ -38,7 +38,7 @@ const NavBar = () => {
                         >
                             <Menu.Item
                                 as={'a'}
-                                href="/#home"
+                                href="/koruja/#home"
                                 className="logo-container"
                             >
                                 <Image src={logo}/>
