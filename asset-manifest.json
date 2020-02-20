@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/korujaproject/static/css/main.4c02e969.chunk.css",
+    "main.css": "/korujaproject/static/css/main.13c6a34f.chunk.css",
     "main.js": "/korujaproject/static/js/main.43a64274.chunk.js",
     "main.js.map": "/korujaproject/static/js/main.43a64274.chunk.js.map",
     "runtime-main.js": "/korujaproject/static/js/runtime-main.10022bb6.js",
@@ -9,10 +9,10 @@
     "static/js/2.3ebd5844.chunk.js": "/korujaproject/static/js/2.3ebd5844.chunk.js",
     "static/js/2.3ebd5844.chunk.js.map": "/korujaproject/static/js/2.3ebd5844.chunk.js.map",
     "index.html": "/korujaproject/index.html",
-    "precache-manifest.4dbccbca6677f23540cd5932f444c022.js": "/korujaproject/precache-manifest.4dbccbca6677f23540cd5932f444c022.js",
+    "precache-manifest.67a284dabbdbc4f43deca1aaac61f646.js": "/korujaproject/precache-manifest.67a284dabbdbc4f43deca1aaac61f646.js",
     "service-worker.js": "/korujaproject/service-worker.js",
     "static/css/2.cee0760a.chunk.css.map": "/korujaproject/static/css/2.cee0760a.chunk.css.map",
-    "static/css/main.4c02e969.chunk.css.map": "/korujaproject/static/css/main.4c02e969.chunk.css.map",
+    "static/css/main.13c6a34f.chunk.css.map": "/korujaproject/static/css/main.13c6a34f.chunk.css.map",
     "static/js/2.3ebd5844.chunk.js.LICENSE.txt": "/korujaproject/static/js/2.3ebd5844.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/korujaproject/static/media/outline-icons.ef60a4f6.woff",
     "static/media/image2.svg": "/korujaproject/static/media/image2.50265e9e.svg"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.10022bb6.js",
     "static/css/2.cee0760a.chunk.css",
     "static/js/2.3ebd5844.chunk.js",
-    "static/css/main.4c02e969.chunk.css",
+    "static/css/main.13c6a34f.chunk.css",
     "static/js/main.43a64274.chunk.js"
   ]
 }
