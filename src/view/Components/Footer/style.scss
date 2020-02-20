@@ -68,13 +68,20 @@
 }
 
 
+@media #{$mq-large} {
+  .icon-footer-instagram {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
 @media #{$mq-computer} {
   .header-contacts {
     padding-top: 2rem;
   }
 
   .form-contacts {
-    margin: auto!important;
+    margin: auto !important;
 
   }
 }
@@ -107,4 +114,6 @@
   .footer-mobile-phones {
     justify-content: center;
   }
+
+
 }

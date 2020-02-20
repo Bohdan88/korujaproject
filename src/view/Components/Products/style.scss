@@ -1,3 +1,5 @@
+@import '../../../style/variables';
+
 #products {
   padding-top: 6rem;
   background: linear-gradient(0deg, rgba(255, 255, 255, 1) 86%, rgba(233, 236, 238, 1) 98%);
@@ -57,7 +59,7 @@
   }
 
   div.stretched.twelve.wide.column {
-    padding-left: 1px;
+    padding: 0px 0px 0px 1px;
     background: linear-gradient(0deg, rgba(147, 193, 190, 0.8) 0%, rgba(255, 255, 255, 1) 13%);
 
     .active.tab {
@@ -134,7 +136,7 @@
   right: 5px;
   padding: 0px !important;
   margin: 0px !important;
-  background: transparent!important;
+  background: transparent !important;
 }
 
 .products-lifting-image {
@@ -190,6 +192,12 @@
   }
 }
 
+@media #{$mq-large} {
+  .products-lifting-grid > .row > .products-lifting-column:last-child {
+    align-self: auto !important;
+  }
+}
+
 
 @media only screen and (max-width: 1199px) {
   .products-lifting-modal-content {
@@ -210,10 +218,10 @@
     transform: translate(-50%, -50%);
   }
   .products-lifting-modal {
-    background: transparent!important;
+    background: transparent !important;
   }
   .products-lifting-modal-content, .products-lifting-modal-image {
-    height: 500px!important;
+    height: 500px !important;
     width: 500px;
   }
 
@@ -231,7 +239,7 @@
   }
 
   .products-lifting-grid {
-    justify-content: center!important;
+    justify-content: center !important;
   }
 
   .products-lifting-column {
@@ -239,7 +247,7 @@
   }
 
   .products-lifting-button-expand {
-    display:none!important;
+    display: none !important;
   }
 }
 
