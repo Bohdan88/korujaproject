@@ -21,6 +21,15 @@ export const PRODUCTS_TABS = {
     },
     "lifting": {
         "desc": ["Thread_leaflet.pdf-4_sok2w" , "liftkin_phi5", "bomb_alp3n", "gog_ll40l", "nose_n9ks6",  "mesh_kizny", "twin_gobvx", "arrow_wb8og", "Thread_leaflet.pdf-4_t9jk2d"]
+    },
+
+    "partners": {
+        "logo": [
+            "DERMALINE_",
+            "COSOLKE_",
+            "HEDISON__",
+
+            "PRO_YOU_", "PICOBIO_", "ANLCIS__"],
     }
 };
 

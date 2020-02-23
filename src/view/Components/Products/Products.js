@@ -1,13 +1,16 @@
 import React, {useContext} from 'react';
 import {Header, Tab} from 'semantic-ui-react';
-import {Cosmetology, LiftingThread} from './Components/';
+import {Cosmetology, LiftingThread, Cosmetics} from './Components/';
 import LangContext from '../../../context/LangContext';
 import './style.scss';
 
 
 const createPanes = products => {
     return [
-
+        {
+            menuItem: products.tabNames.cosmetics,
+            render: () => <Tab.Pane attached={false}><Cosmetics/></Tab.Pane>,
+        },
         {
             menuItem: products.tabNames.lifting,
             render: () => <Tab.Pane attached={false}><LiftingThread/></Tab.Pane>,
@@ -16,10 +19,8 @@ const createPanes = products => {
             menuItem: products.tabNames.cosmetology,
             render: () => <Tab.Pane attached={false}><Cosmetology context={products}/></Tab.Pane>,
         },
-        {
-            menuItem: products.tabNames.cosmetics,
-            render: () => <Tab.Pane attached={false}>Tab 3 Content</Tab.Pane>,
-        },
+
+
         {
             menuItem: products.tabNames.other,
             render: () => <Tab.Pane attached={false}>Tab 4 Content</Tab.Pane>,

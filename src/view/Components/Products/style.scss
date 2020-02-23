@@ -2,7 +2,7 @@
 
 #products {
   padding-top: 6rem;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 1) 86%, rgba(233, 236, 238, 1) 98%);
+  //background: linear-gradient(0deg, rgba(255, 255, 255, 1) 86%, rgba(233, 236, 238, 1) 98%);
 }
 
 .header-products::after {
@@ -11,7 +11,7 @@
   margin: 10px auto;
   height: 3px;
   width: 50px;
-  background: #9CC4C3;
+  //background: #9CC4C3;
   will-change: transform, opacity;
 }
 
@@ -55,12 +55,13 @@
 
 .cosmetics-left-tab > div.ui.grid {
   div.four.wide.column {
-    background: linear-gradient(0deg, rgba(147, 193, 190, 0.8) 0%, rgba(255, 255, 255, 1) 13%);
+    padding:0px;
+    //background: linear-gradient(0deg, rgba(147, 193, 190, 0.8) 0%, rgba(255, 255, 255, 1) 13%);
   }
 
   div.stretched.twelve.wide.column {
     padding: 0px 0px 0px 1px;
-    background: linear-gradient(0deg, rgba(147, 193, 190, 0.8) 0%, rgba(255, 255, 255, 1) 13%);
+    //background: linear-gradient(0deg, rgba(147, 193, 190, 0.8) 0%, rgba(255, 255, 255, 1) 13%);
 
     .active.tab {
       border-left: none !important;
@@ -142,6 +143,40 @@
 .products-lifting-image {
   float: right !important;
 }
+.products-cosmetics-grid {
+
+}
+
+.products-cosmetics-column {
+  margin: auto!important;
+  padding: 20px !important;
+  height:550px;
+}
+
+.products-cosmetics-description {
+  height: 300px;
+  line-height: 1.6rem;
+}
+
+.products-cosmetics-card {
+  //display: flex!important;
+  margin: auto !important;
+  padding: 20px !important;
+  height: 100%;
+
+}
+
+
+.products-cosmetics-image {
+  width:50%;
+  margin: auto!important;
+  //border-bottom: 1px solid lightgray;
+}
+
+.products-cosmetics-header {
+  padding-top:15px;
+  border-top: 1px solid lightgray;
+}
 
 
 @media only screen and (min-width: 1920px) and (max-width: 2559px) {
@@ -171,14 +206,13 @@
   opacity: 1 !important;
 }
 
-
 @media only screen and (min-width: 1920px) {
   .products-lifting-grid {
     justify-content: center !important;
   }
 
   .products-tab > div > .secondary.menu {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .products-lifting-button-expand {
@@ -283,6 +317,11 @@
 
   .cosmetics-left-tab > .pointing.menu {
     border: none;
+  }
+
+  .products-cosmetology-card {
+    padding: 20px!important;
+    margin: auto 1rem 1rem!important;
   }
 }
 

@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Grid, Tab, Reveal, Header, Transition} from "semantic-ui-react";
+import {Grid, Tab, Reveal, Header, Transition, Card} from "semantic-ui-react";
 import {
     PRODUCTS_TABS,
     PRODUCTS,
@@ -34,32 +34,51 @@ const fetchImages = (value) => {
                             widescreen={5}
                             mobile={16}
                         >
-                            <Reveal
-                                className='products-reveal'
-                                animated='fade'>
-                                <Reveal.Content visible>
-                                    <Grid.Column
-                                        className='products-column-image'
-                                        key={key}>
-                                        <CloudImage
-                                            alt={""}
-                                            cloudName={CLOUD_NAME}
-                                            className='products-images'
-                                            publicId={`${PRODUCTS}/${value}/${name}`}
-                                        />
-                                    </Grid.Column>
-                                </Reveal.Content>
-                                <Reveal.Content
-                                    className='product-name'
-                                    hidden>
-                                    <Header
-                                        as={'h3'}
-                                    >
-                                        {name.split('_').join(' ')}
-                                    </Header>
-                                </Reveal.Content>
-                                <Reveal/>
-                            </Reveal>
+                            {window.innerWidth > 767 ?
+                                <Reveal
+                                    className='products-reveal'
+                                    animated='fade'>
+                                    <Reveal.Content visible>
+                                        <Grid.Column
+                                            className='products-column-image'
+                                            key={key}>
+                                            <CloudImage
+                                                alt={""}
+                                                cloudName={CLOUD_NAME}
+                                                className='products-images'
+                                                publicId={`${PRODUCTS}/${value}/${name}`}
+                                            />
+                                        </Grid.Column>
+
+                                    </Reveal.Content>
+                                    <Reveal.Content
+                                        className='product-name'
+                                        hidden>
+                                        <Header
+                                            as={'h3'}
+                                        >
+                                            {name.split('_').join(' ')}
+                                        </Header>
+                                    </Reveal.Content>
+                                    <Reveal/>
+                                </Reveal> :
+                                <Card
+                                    className='products-cosmetology-card'
+                                    key={key}>
+                                    <CloudImage
+                                        alt={""}
+                                        cloudƒName={CLOUD_NAME}
+                                        className='products-images'
+                                        publicId={`${PRODUCTS}/${value}/${name}`}
+                                    />
+                                    <Card.Header
+                                        textAlign='center'
+                                    >{name.split('_').join(' ')}</Card.Header>
+                                </Card>
+
+                            }
+                            <div>
+                            </div>
                         </Grid.Column>
                     </Transition>
                 })}
