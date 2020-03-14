@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b8a78c6dd37536fbc6ee368208fb989",
+    "revision": "cbc13623cc950fc0825a9580b617ff61",
     "url": "/korujaproject/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/korujaproject/static/css/2.4df21ebd.chunk.css"
   },
   {
-    "revision": "2e494703aa47b6dad245",
-    "url": "/korujaproject/static/css/main.d9d4c0dd.chunk.css"
+    "revision": "cb96901434950b50a009",
+    "url": "/korujaproject/static/css/main.0749b83d.chunk.css"
   },
   {
     "revision": "9812a68dd459a5c117df",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/korujaproject/static/js/2.c95a84e2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2e494703aa47b6dad245",
+    "revision": "cb96901434950b50a009",
     "url": "/korujaproject/static/js/main.2153d25d.chunk.js"
   },
   {
