@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/korujaproject/static/css/main.c6edd76f.chunk.css",
-    "main.js": "/korujaproject/static/js/main.f5830573.chunk.js",
-    "main.js.map": "/korujaproject/static/js/main.f5830573.chunk.js.map",
+    "main.css": "/korujaproject/static/css/main.d9d4c0dd.chunk.css",
+    "main.js": "/korujaproject/static/js/main.2153d25d.chunk.js",
+    "main.js.map": "/korujaproject/static/js/main.2153d25d.chunk.js.map",
     "runtime-main.js": "/korujaproject/static/js/runtime-main.10022bb6.js",
     "runtime-main.js.map": "/korujaproject/static/js/runtime-main.10022bb6.js.map",
-    "static/css/2.5964e540.chunk.css": "/korujaproject/static/css/2.5964e540.chunk.css",
-    "static/js/2.2c45df8c.chunk.js": "/korujaproject/static/js/2.2c45df8c.chunk.js",
-    "static/js/2.2c45df8c.chunk.js.map": "/korujaproject/static/js/2.2c45df8c.chunk.js.map",
+    "static/css/2.4df21ebd.chunk.css": "/korujaproject/static/css/2.4df21ebd.chunk.css",
+    "static/js/2.c95a84e2.chunk.js": "/korujaproject/static/js/2.c95a84e2.chunk.js",
+    "static/js/2.c95a84e2.chunk.js.map": "/korujaproject/static/js/2.c95a84e2.chunk.js.map",
     "index.html": "/korujaproject/index.html",
-    "precache-manifest.1dcad1a14e73d95997929a1a2bede823.js": "/korujaproject/precache-manifest.1dcad1a14e73d95997929a1a2bede823.js",
+    "precache-manifest.7bfa015b41f05a6dffba483a96f228c3.js": "/korujaproject/precache-manifest.7bfa015b41f05a6dffba483a96f228c3.js",
     "service-worker.js": "/korujaproject/service-worker.js",
-    "static/css/2.5964e540.chunk.css.map": "/korujaproject/static/css/2.5964e540.chunk.css.map",
-    "static/css/main.c6edd76f.chunk.css.map": "/korujaproject/static/css/main.c6edd76f.chunk.css.map",
-    "static/js/2.2c45df8c.chunk.js.LICENSE.txt": "/korujaproject/static/js/2.2c45df8c.chunk.js.LICENSE.txt",
+    "static/css/2.4df21ebd.chunk.css.map": "/korujaproject/static/css/2.4df21ebd.chunk.css.map",
+    "static/css/main.d9d4c0dd.chunk.css.map": "/korujaproject/static/css/main.d9d4c0dd.chunk.css.map",
+    "static/js/2.c95a84e2.chunk.js.LICENSE.txt": "/korujaproject/static/js/2.c95a84e2.chunk.js.LICENSE.txt",
     "static/media/semantic.min.css": "/korujaproject/static/media/outline-icons.ef60a4f6.woff",
     "static/media/image2.svg": "/korujaproject/static/media/image2.50265e9e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.10022bb6.js",
-    "static/css/2.5964e540.chunk.css",
-    "static/js/2.2c45df8c.chunk.js",
-    "static/css/main.c6edd76f.chunk.css",
-    "static/js/main.f5830573.chunk.js"
+    "static/css/2.4df21ebd.chunk.css",
+    "static/js/2.c95a84e2.chunk.js",
+    "static/css/main.d9d4c0dd.chunk.css",
+    "static/js/main.2153d25d.chunk.js"
   ]
 }

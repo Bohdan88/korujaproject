@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c04fceed7dad07d66f56c6977fdf069d",
+    "revision": "3b8a78c6dd37536fbc6ee368208fb989",
     "url": "/korujaproject/index.html"
   },
   {
-    "revision": "7f457d85b5bf1dba66cb",
-    "url": "/korujaproject/static/css/2.5964e540.chunk.css"
+    "revision": "9812a68dd459a5c117df",
+    "url": "/korujaproject/static/css/2.4df21ebd.chunk.css"
   },
   {
-    "revision": "28ebd69b5e9c7945fb3f",
-    "url": "/korujaproject/static/css/main.c6edd76f.chunk.css"
+    "revision": "2e494703aa47b6dad245",
+    "url": "/korujaproject/static/css/main.d9d4c0dd.chunk.css"
   },
   {
-    "revision": "7f457d85b5bf1dba66cb",
-    "url": "/korujaproject/static/js/2.2c45df8c.chunk.js"
+    "revision": "9812a68dd459a5c117df",
+    "url": "/korujaproject/static/js/2.c95a84e2.chunk.js"
   },
   {
     "revision": "78f8d92e31a21ccb62293ca00cfd53a3",
-    "url": "/korujaproject/static/js/2.2c45df8c.chunk.js.LICENSE.txt"
+    "url": "/korujaproject/static/js/2.c95a84e2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "28ebd69b5e9c7945fb3f",
-    "url": "/korujaproject/static/js/main.f5830573.chunk.js"
+    "revision": "2e494703aa47b6dad245",
+    "url": "/korujaproject/static/js/main.2153d25d.chunk.js"
   },
   {
     "revision": "ae3e36f223990476bb2a",
