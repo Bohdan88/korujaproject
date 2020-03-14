@@ -122,6 +122,10 @@
     padding: 40px;
   }
 
+  .header-about-desc {
+    font-size: 25px !important;
+  }
+
   .paragraph-about-desc {
     width: 100%;
     line-height: 2;
@@ -129,7 +133,7 @@
 
   .about-desc > *,
   .list-content-about > .item {
-    font-size: 15px !important;
+    font-size: 15px;
   }
 
   .about-icon {

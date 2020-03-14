@@ -1,23 +1,23 @@
-@import './variables';
+@import "./variables";
 
 html {
   overflow-y: hidden; // hide vertical
-  scroll-behavior: smooth!important;
+  scroll-behavior: smooth !important;
 }
 
 body {
-  scroll-behavior: smooth!important;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  scroll-behavior: smooth !important;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
-
 
 a {
   text-decoration: none; /* no underline */
 }
 
 h2 {
-  font-size: $h2-size!important;
-  font-weight: 500!important;
+  font-size: $h2-size !important;
+  font-weight: 500 !important;
 }
 
 .float-left {
@@ -40,3 +40,9 @@ h2 {
   opacity: 0.8;
 }
 
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 25px !important;
+    padding-bottom:5px!important;
+  }
+}

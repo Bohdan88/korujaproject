@@ -350,8 +350,8 @@
   }
 
   .products-cosmetics-item {
-    font-size: 14px!important;
-    line-height: 2!important;
+    font-size: 14px !important;
+    line-height: 2 !important;
   }
 }
 
@@ -369,6 +369,8 @@
     border: none;
   }
 
+  // cosmetics
+
   .cosmetics-left-tab > .menu {
     justify-content: center !important;
   }
@@ -380,5 +382,14 @@
   .products-cosmetology-card {
     padding: 20px !important;
     margin: auto auto 1rem !important;
+  }
+
+  .products-cosmetics-header {
+    padding: 20px;
+    font-size: 18px!important;
+    font-weight: 500!important;
+  }
+  .products-cosmetics-content {
+    padding: 20px 0px !important;
   }
 }
