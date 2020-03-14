@@ -1,76 +1,100 @@
-import React, {useContext} from 'react';
-import {Grid, Container, Transition, Card} from "semantic-ui-react";
-import {PRODUCTS_TABS, PRODUCTS, CLOUD_NAME} from "../../../../constants/";
-import {Image as CloudImage} from "cloudinary-react";
-import LangContext from '../../../../context/LangContext';
+import React, { useContext, useState } from "react";
+import {
+  Grid,
+  Container,
+  Transition,
+  Item,
+  Header,
+  Step,
+  Icon,
+  Segment
+} from "semantic-ui-react";
+import {
+  PRODUCTS,
+  CLOUD_NAME,
+  PRODUCTS_COSMETICS_STEPS
+} from "../../../../constants/";
+import { Image as CloudImage } from "cloudinary-react";
+import LangContext from "../../../../context/LangContext";
 
-const Cosmetics = () => {
-    const {products} = useContext(LangContext).currentLangData;
-    // console.log(products, 'products')
-
-    const fetchImages = (value) => {
-        return (
-            <Grid  className='products-cosmetics-grid'>
-                <Grid.Row>
-                    {PRODUCTS_TABS.partners.logo.map((name, key) => {
-                        return <Transition
-                            key={key}
-                            visible={true}
-                            animation='fade'
-                            transitionOnMount={true}
-                            unmountOnHide={true}
-                            duration={1500}>
-                            <Grid.Column
-                                className={`products-cosmetics-column`}
-                                // style={{top: key === 0 && window.innerWidth > 768 && '-20px'}}
-                                verticalAlign='middle'
-                                 key={key}
-                                 largeScreen={5}
-                                 tablet={7}
-                                 computer={5}
-                                 widescreen={3}
-                                 mobile={16}
-                            >
-                            <Card
-                                fluid
-                                className="products-cosmetics-card"
-                            >
-
-                                <CloudImage
-                                    alt={""}
-                                    cloudName={CLOUD_NAME}
-                                    className='products-cosmetics-image'
-                                    publicId={`${PRODUCTS}/${value}/${name}`}
-                                />
-                                <Card.Header
-                                    as={'h3'}
-                                    className='products-cosmetics-header'
-                                    textAlign={'center'}>
-                                    {name.split('_').join(' ')}
-                                </Card.Header>
-                                <Card.Description
-                                    className="products-cosmetics-description"
-                                >
-                                    {products.partners &&  products.partners[key]}
-                                </Card.Description>
-                            </Card>
-                            </Grid.Column>
-                        </Transition>
-                    })}
-                </Grid.Row>
-            </Grid>
-        )
-    };
-
-
-    return (
-        <div className='products-lifting-thread'>
-            <Container fluid>
-                {fetchImages('partners')}
-            </Container>
-        </div>
-    );
+const CustomizedStep = ({ products }) => {
+  const [currentStep, selectStep] = useState("choice");
+  const [curentKey, setKey] = useState(0);
+  return (
+    <Transition
+      visible={true}
+      animation="fade"
+      transitionOnMount={true}
+      duration={1500}
+    >
+      <Container className="products-cosmetics-steps" fluid>
+        <Step.Group widths={3} attached="top" fluid stackable="tablet">
+          {PRODUCTS_COSMETICS_STEPS.map((step, key) => {
+            return (
+              <Step
+                active={key === curentKey}
+                onClick={() => {
+                  setKey(key);
+                  selectStep(step.name);
+                }}
+                key={key}
+              >
+                <Icon color={step.color} name={step.icon} />
+                <Step.Content>
+                  <Step.Title>{products[step.name].header}</Step.Title>
+                </Step.Content>
+              </Step>
+            );
+          })}
+        </Step.Group>
+        <Segment attached>
+          <Item.Group>
+            <Item className={'products-cosmetics-item'}>
+              <CloudImage
+                alt={""}
+                cloudName={CLOUD_NAME}
+                className="products-cosmetics-images"
+                publicId={`${PRODUCTS}/others/${PRODUCTS_COSMETICS_STEPS[curentKey].image}`}
+              />
+              <Item.Content className={"products-cosmetics-content"}>
+                {products[currentStep].desc.map((item, key) => {
+                  return (
+                    <Item.Description
+                      className={"products-cosmetics-item"}
+                      key={key}
+                    >
+                      {item}
+                    </Item.Description>
+                  );
+                })}
+              </Item.Content>
+            </Item>
+          </Item.Group>
+        </Segment>
+      </Container>
+    </Transition>
+  );
 };
+const Cosmetics = () => {
+  const { products } = useContext(LangContext).currentLangData;
+  // console.log(products, 'products')
 
+  return (
+    <div className="products-cosmetics-container">
+      <Grid>
+        <Grid.Row>
+          <Header className="products-cosmetics-header" as="h3">
+            {" "}
+            {products.services.header}
+          </Header>
+        </Grid.Row>
+        <Grid.Row>
+          <CustomizedStep products={products.services.steps} />
+        </Grid.Row>
+      </Grid>
+      {/* {console.log(products.services)} */}
+    </div>
+  );
+};
 
 export default Cosmetics;

@@ -20,14 +20,14 @@ const LiftingThread = () => {
                         return <Transition
                             key={key}
                             visible={true}
-                            animation='zoom'
+                            animation='fade'
                             transitionOnMount={true}
                             unmountOnHide={true}
                             duration={1500}>
                             <Grid.Column
                                 className={`products-lifting-column ${key}`}
-                                style={{top: key === 0 && window.innerWidth > 768 && '-20px'}}
-                                verticalAlign='middle'
+                                style={{top: key === 0 && window.innerWidth > 768 && '0px'}}
+                                verticalAlign='top'
                                 key={key}
                                 largeScreen={5}
                                 tablet={7}

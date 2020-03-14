@@ -31,6 +31,10 @@ const About = () => {
                         <b>KoRuJa </b>{about.desc}
                     </p>
 
+                    <p   className='paragraph-about-desc'>
+                         {about.current}
+                    </p>
+
                     <p className='paragraph-about-desc'>
                         {about.spec}
                     </p>

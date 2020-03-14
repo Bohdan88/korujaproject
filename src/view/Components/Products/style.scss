@@ -1,17 +1,17 @@
-@import '../../../style/variables';
+@import "../../../style/variables";
 
 #products {
   padding-top: 6rem;
-  //background: linear-gradient(0deg, rgba(255, 255, 255, 1) 86%, rgba(233, 236, 238, 1) 98%);
+  // background: linear-gradient(0deg, rgba(255, 255, 255, 1) 86%, rgba(233, 236, 238, 1) 98%);
 }
 
 .header-products::after {
-  content: '';
+  content: "";
   display: block;
   margin: 10px auto;
   height: 3px;
   width: 50px;
-  //background: #9CC4C3;
+  background: #9cc4c3;
   will-change: transform, opacity;
 }
 
@@ -21,19 +21,22 @@
     justify-content: center;
   }
 
+  // div.ui.segment.active.tab > div {
+  //   border: none;
+  // }
   div.ui.segment.active.tab {
     border: none;
     box-shadow: none;
   }
 
-
-  div.ui.segment.active.tab > div {
-    border-top: 1px solid #D4D4D5;
-  }
+  // div.ui.segment.active.tab > div {
+  //   border-top: 1px solid #d4d4d5;
+  // }
 }
 
-
-.products-images, .product-column, .product-name {
+.products-images,
+.product-column,
+.product-name {
   width: 250px;
   height: 250px;
   cursor: pointer;
@@ -48,20 +51,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #F4F4F4;
+  background: #f4f4f4;
   border-radius: 5px;
 }
 
-
 .cosmetics-left-tab > div.ui.grid {
   div.four.wide.column {
-    padding:0px;
-    //background: linear-gradient(0deg, rgba(147, 193, 190, 0.8) 0%, rgba(255, 255, 255, 1) 13%);
+    padding: 0px;
+    // background: linear-gradient(0deg, rgba(147, 193, 190, 0.8) 0%, rgba(255, 255, 255, 1) 13%);
   }
 
   div.stretched.twelve.wide.column {
+    border-top: 1px solid #d4d4d5;
     padding: 0px 0px 0px 1px;
-    //background: linear-gradient(0deg, rgba(147, 193, 190, 0.8) 0%, rgba(255, 255, 255, 1) 13%);
+    // background: linear-gradient(0deg, rgba(147, 193, 190, 0.8) 0%, rgba(255, 255, 255, 1) 13%);
 
     .active.tab {
       border-left: none !important;
@@ -97,7 +100,6 @@
   flex-direction: column;
 }
 
-
 // lifting thread
 
 .products-lifting-column {
@@ -125,7 +127,7 @@
   position: relative;
   right: -10px;
   top: 140px;
-  zIndex: 50px;
+  z-index: 50px;
   margin: 0px;
   float: right;
 }
@@ -143,41 +145,65 @@
 .products-lifting-image {
   float: right !important;
 }
+
+// cosmetics
+
+.products-cosmetics-container {
+}
 .products-cosmetics-grid {
-
-}
-
-.products-cosmetics-column {
-  margin: auto!important;
-  padding: 20px !important;
-  height:550px;
-}
-
-.products-cosmetics-description {
-  height: 300px;
-  line-height: 1.6rem;
-}
-
-.products-cosmetics-card {
-  //display: flex!important;
-  margin: auto !important;
-  padding: 20px !important;
-  height: 100%;
-
-}
-
-
-.products-cosmetics-image {
-  width:50%;
-  margin: auto!important;
-  //border-bottom: 1px solid lightgray;
 }
 
 .products-cosmetics-header {
-  padding-top:15px;
-  border-top: 1px solid lightgray;
+  padding-top: 30px !important;
+  margin: auto !important;
 }
 
+.products-cosmetics-steps {
+  padding: 0 50px;
+}
+
+.products-cosmetics-images {
+  width: 500px;
+  height: 325px;
+}
+
+.products-cosmetics-content {
+  margin: auto !important;
+  padding: 50px !important;
+  font-size: 18px !important;
+}
+// .products-cosmetics-item {
+//   font-size: 16px;
+// }
+// .products-cosmetics-column {
+//   margin: auto!important;
+//   padding: 20px !important;
+//   height:550px;
+// }
+
+// .products-cosmetics-description {
+//   height: 300px;
+//   line-height: 1.6rem;
+// }
+
+// .products-cosmetics-card {
+//   //display: flex!important;
+//   margin: auto !important;
+//   padding: 20px !important;
+//   height: 100%;
+
+// }
+
+// .products-cosmetics-image {
+//   width:50%;
+//   margin: auto!important;
+//   //border-bottom: 1px solid lightgray;
+// }
+
+// .products-cosmetics-header {
+//   padding-top:15px;
+//   border-top: 1px solid lightgray;
+// }
 
 @media only screen and (min-width: 1920px) and (max-width: 2559px) {
   .products-lifting-button-expand {
@@ -194,12 +220,12 @@
   top: -2.5rem !important;
   right: -2.5rem !important;
   z-index: 1 !important;
-  opacity: .8 !important;
+  opacity: 0.8 !important;
   font-size: 1.25em !important;
   color: #fff !important;
   width: 2.25rem !important;
   height: 2.25rem !important;
-  padding: .625rem 0 0 0 !important;
+  padding: 0.625rem 0 0 0 !important;
 }
 
 .products-lifting-modal-button-close:hover {
@@ -232,8 +258,8 @@
   }
 }
 
-
 @media only screen and (max-width: 1199px) {
+  // lifting
   .products-lifting-modal-content {
     padding: 0px !important;
     background: transparent !important;
@@ -242,7 +268,7 @@
 
   .products-lifting-modal-button-close {
     top: 80px;
-    zIndex: 50px;
+    zindex: 50px;
   }
 
   .products-lifting-modal-image {
@@ -254,7 +280,8 @@
   .products-lifting-modal {
     background: transparent !important;
   }
-  .products-lifting-modal-content, .products-lifting-modal-image {
+  .products-lifting-modal-content,
+  .products-lifting-modal-image {
     height: 500px !important;
     width: 500px;
   }
@@ -264,6 +291,27 @@
     right: -7rem !important;
   }
 
+  // cosmetics
+
+  .products-cosmetics-header {
+    text-align: center;
+  }
+
+  .products-cosmetics-images {
+    margin: auto;
+  }
+
+  .products-cosmetics-steps {
+    .three.steps > * {
+      width: 100% !important;
+    }
+  }
+
+  .products-cosmetics-item {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -292,12 +340,22 @@
 
   .products-lifting-image {
     border-radius: 4px;
-    border: 1px solid #D4D4D5 !important;
+    border: 1px solid #d4d4d5 !important;
+  }
+
+  // cosmetics
+  .products-cosmetics-images {
+    width: 250px;
+    height: 200px;
+  }
+
+  .products-cosmetics-item {
+    font-size: 14px!important;
+    line-height: 2!important;
   }
 }
 
 @media only screen and (max-width: 625px) {
-
   .products-tab > div > .secondary.menu {
     display: flex;
     flex-direction: column;
@@ -320,8 +378,7 @@
   }
 
   .products-cosmetology-card {
-    padding: 20px!important;
-    margin: auto 1rem 1rem!important;
+    padding: 20px !important;
+    margin: auto auto 1rem !important;
   }
 }
-
