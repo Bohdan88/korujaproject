@@ -82,6 +82,12 @@
   }
 }
 
+@media only screen and (max-width: 1919px) {
+    #about {
+      margin-top: 1.6rem!important;
+    }
+}
+
 @media screen and (max-width: 1199px) {
   #about {
     // height: 600px;

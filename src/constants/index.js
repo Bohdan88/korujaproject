@@ -58,15 +58,6 @@ export const PRODUCTS_TABS = {
       "arrow_wb8og"
     ]
   }
-
-  // "partners": {
-  //     "logo": [
-  //         "DERMALINE_",
-  //         "COSOLKE_",
-  //         "HEDISON__",
-
-  //         "PRO_YOU_", "PICOBIO_", "ANLCIS__"],
-  // }
 };
 
 export const PRODUCTS_COSMETICS_STEPS = [
@@ -91,8 +82,11 @@ export const PRODUCTS_COSMETICS_STEPS = [
 ];
 
 // contacts
-export const USER_ID = "user_1D0BOMjDfxEea3jbnCdmp";
-export const TEMPLATE_ID = "template_Jpj3zWxG";
+// export const USER_ID = "user_1D0BOMjDfxEea3jbnCdmp";
+// export const TEMPLATE_ID = "template_Jpj3zWxG";
+// furute 
+export const USER_ID = "user_PaYNGMPfAiBf1CSGaI3Vq";
+export const TEMPLATE_ID = "template_OqhctrzW";
 export const NAME_LENGTH = 2;
 export const MINIMUM_MESSAGE_LENGTH = 15;
 export const MAX_MESSAGE_LENGTH = 250;

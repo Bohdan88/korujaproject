@@ -7,14 +7,6 @@ import "./style.scss";
 const createPanes = products => {
   return [
     {
-      menuItem: products.tabNames.cosmetology,
-      render: () => (
-        <Tab.Pane attached={false}>
-          <Cosmetology context={products} />
-        </Tab.Pane>
-      )
-    },
-    {
       menuItem: products.tabNames.lifting,
       render: () => (
         <Tab.Pane attached={false}>
@@ -22,7 +14,14 @@ const createPanes = products => {
         </Tab.Pane>
       )
     },
-
+    {
+      menuItem: products.tabNames.cosmetology,
+      render: () => (
+        <Tab.Pane attached={false}>
+          <Cosmetology context={products} />
+        </Tab.Pane>
+      )
+    },
     {
       menuItem: products.tabNames.cosmetics,
       render: () => (

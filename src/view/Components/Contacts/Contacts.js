@@ -158,7 +158,6 @@ const Contacts = () => {
                             required
                             error={clickedButton && !checkMessage(form.message) && {
                                 content: contacts.textError,
-                                // pointing: 'below',
                             }}
                             onChange={(e, data) => handleForm({...form, message: data.value})}
                             value={form.message}
@@ -172,7 +171,6 @@ const Contacts = () => {
                                 handleClick(true);
                                 handleSubmit(form, passValid)
                             }}
-
                             className='contacts-button'
                             type='submit'>
                             {contacts.send}

@@ -62,7 +62,6 @@ const langData = {
         cosmetology: "COSMETOLOGY",
         lifting: "LIFTING THREAD",
         cosmetics: "COSMETICS AND OTHER PRODUCTS"
-        // 'other': 'OTHER PRODUCTS'
       },
       subTabNames: {
         toxins: "TOXINS",
@@ -144,7 +143,6 @@ const langData = {
         cosmetology: "КОСМЕТОЛОГИЯ",
         lifting: "НИТЕВОЙ ЛИФТИНГ",
         cosmetics: "КОСМЕТИКА И ДРУГИЕ ТОВАРЫ"
-        // 'other': 'ДРУГИЕ ТОВАРЫ'
       },
       subTabNames: {
         toxins: "ТОКСИНЫ",
