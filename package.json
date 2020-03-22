@@ -42,7 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://http://koruja-shop.ru/korujaproject",
+  "homepage": "https://koruja-shop.ru/korujaproject",
   "devDependencies": {
     "gh-pages": "^2.2.0"
   }
