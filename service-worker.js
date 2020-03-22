@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "koruja-shop.ru/precache-manifest.96931ba5de4fc112acf3023e7537e20a.js"
+  "koruja-shop.ru/precache-manifest.8f0a96995fce068f4ac76a4699042e5a.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "761e5756b839cc15d8d2b6f675fd2c33",
+    "revision": "2cc43a27e9ec65d26b262f654322e545",
     "url": "koruja-shop.ru/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "koruja-shop.ru/static/css/2.1a93710a.chunk.css"
   },
   {
-    "revision": "81f88d678d7367286f57",
+    "revision": "ce33486b6a700f2fd253",
     "url": "koruja-shop.ru/static/css/main.1b527328.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "koruja-shop.ru/static/js/2.51aec098.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "81f88d678d7367286f57",
-    "url": "koruja-shop.ru/static/js/main.dcdde4d0.chunk.js"
+    "revision": "ce33486b6a700f2fd253",
+    "url": "koruja-shop.ru/static/js/main.5b0e2643.chunk.js"
   },
   {
     "revision": "c8e9532cd4d1c5fdf19c",

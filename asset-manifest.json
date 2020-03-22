@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "koruja-shop.ru/static/css/main.1b527328.chunk.css",
-    "main.js": "koruja-shop.ru/static/js/main.dcdde4d0.chunk.js",
-    "main.js.map": "koruja-shop.ru/static/js/main.dcdde4d0.chunk.js.map",
+    "main.js": "koruja-shop.ru/static/js/main.5b0e2643.chunk.js",
+    "main.js.map": "koruja-shop.ru/static/js/main.5b0e2643.chunk.js.map",
     "runtime-main.js": "koruja-shop.ru/static/js/runtime-main.2a0e2097.js",
     "runtime-main.js.map": "koruja-shop.ru/static/js/runtime-main.2a0e2097.js.map",
     "static/css/2.1a93710a.chunk.css": "koruja-shop.ru/static/css/2.1a93710a.chunk.css",
     "static/js/2.51aec098.chunk.js": "koruja-shop.ru/static/js/2.51aec098.chunk.js",
     "static/js/2.51aec098.chunk.js.map": "koruja-shop.ru/static/js/2.51aec098.chunk.js.map",
     "index.html": "koruja-shop.ru/index.html",
-    "precache-manifest.96931ba5de4fc112acf3023e7537e20a.js": "koruja-shop.ru/precache-manifest.96931ba5de4fc112acf3023e7537e20a.js",
+    "precache-manifest.8f0a96995fce068f4ac76a4699042e5a.js": "koruja-shop.ru/precache-manifest.8f0a96995fce068f4ac76a4699042e5a.js",
     "service-worker.js": "koruja-shop.ru/service-worker.js",
     "static/css/2.1a93710a.chunk.css.map": "koruja-shop.ru/static/css/2.1a93710a.chunk.css.map",
     "static/css/main.1b527328.chunk.css.map": "koruja-shop.ru/static/css/main.1b527328.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.1a93710a.chunk.css",
     "static/js/2.51aec098.chunk.js",
     "static/css/main.1b527328.chunk.css",
-    "static/js/main.dcdde4d0.chunk.js"
+    "static/js/main.5b0e2643.chunk.js"
   ]
 }
