@@ -346,12 +346,16 @@
   // cosmetics
   .products-cosmetics-images {
     width: 250px;
-    height: 200px;
+    height: 150px;
   }
 
   .products-cosmetics-item {
     font-size: 14px !important;
     line-height: 2 !important;
+  }
+
+  .products-cosmetics-steps {
+    padding: 5px;
   }
 }
 
@@ -385,10 +389,11 @@
   }
 
   .products-cosmetics-header {
-    padding: 20px;
-    font-size: 18px!important;
-    font-weight: 500!important;
+    padding: 0px 10px !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
   }
+
   .products-cosmetics-content {
     padding: 20px 0px !important;
   }

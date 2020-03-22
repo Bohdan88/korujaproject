@@ -83,9 +83,9 @@
 }
 
 @media only screen and (max-width: 1919px) {
-    #about {
-      margin-top: 1.6rem!important;
-    }
+  #about {
+    margin-top: 1.6rem !important;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -124,6 +124,9 @@
 }
 
 @media screen and (max-width: 767px) {
+  #about {
+    margin-top: -0.8rem !important;
+  }
   .about-desc {
     padding: 40px;
   }

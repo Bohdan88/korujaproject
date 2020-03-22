@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import './style.css';
+import './style.scss';
 import {
     Grid,
     Header,

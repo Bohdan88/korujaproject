@@ -23,7 +23,6 @@ const fetchImages = value => {
               directional
               animation="zoom"
               transitionOnMount={true}
-              // onStart={(e, data) => console.log(data)}
               duration={1500}
             >
               <Grid.Column
