@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import './style.css';
+import './style.scss';
 import { Image, List} from "semantic-ui-react";
 import { GB_FLAG_LINK, RU_FLAG_LINK} from '../../../constants';
 import LangContext from '../../../context/LangContext';

@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import './style.css';
+import './style.scss';
 import logo from '../../../assets/image2.svg';
 import {
     Menu,
@@ -38,7 +38,7 @@ const NavBar = () => {
                         >
                             <Menu.Item
                                 as={'a'}
-                                href="/koruja/#home"
+                                href="/korujaproject/#home"
                                 className="logo-container"
                             >
                                 <Image src={logo}/>

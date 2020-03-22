@@ -50,7 +50,7 @@ const Contacts = () => {
 
         });
 
-        setTimeout(() => Swal.close(), 2500)
+        setTimeout(() => Swal.close(), 3000)
 
     };
 
