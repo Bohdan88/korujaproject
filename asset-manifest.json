@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.1b527328.chunk.css",
-    "main.js": "/static/js/main.46d9c525.chunk.js",
-    "main.js.map": "/static/js/main.46d9c525.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c1ccf9b4.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c1ccf9b4.js.map",
-    "static/css/2.46a25d5b.chunk.css": "/static/css/2.46a25d5b.chunk.css",
-    "static/js/2.63b9b541.chunk.js": "/static/js/2.63b9b541.chunk.js",
-    "static/js/2.63b9b541.chunk.js.map": "/static/js/2.63b9b541.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.974ec4945642e84e3e4449283d78e8f9.js": "/precache-manifest.974ec4945642e84e3e4449283d78e8f9.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.46a25d5b.chunk.css.map": "/static/css/2.46a25d5b.chunk.css.map",
-    "static/css/main.1b527328.chunk.css.map": "/static/css/main.1b527328.chunk.css.map",
-    "static/js/2.63b9b541.chunk.js.LICENSE.txt": "/static/js/2.63b9b541.chunk.js.LICENSE.txt",
-    "static/media/semantic.min.css": "/static/media/outline-icons.ef60a4f6.woff",
-    "static/media/image2.svg": "/static/media/image2.50265e9e.svg"
+    "main.css": "koruja-shop.ru/static/css/main.1b527328.chunk.css",
+    "main.js": "koruja-shop.ru/static/js/main.dcdde4d0.chunk.js",
+    "main.js.map": "koruja-shop.ru/static/js/main.dcdde4d0.chunk.js.map",
+    "runtime-main.js": "koruja-shop.ru/static/js/runtime-main.2a0e2097.js",
+    "runtime-main.js.map": "koruja-shop.ru/static/js/runtime-main.2a0e2097.js.map",
+    "static/css/2.1a93710a.chunk.css": "koruja-shop.ru/static/css/2.1a93710a.chunk.css",
+    "static/js/2.51aec098.chunk.js": "koruja-shop.ru/static/js/2.51aec098.chunk.js",
+    "static/js/2.51aec098.chunk.js.map": "koruja-shop.ru/static/js/2.51aec098.chunk.js.map",
+    "index.html": "koruja-shop.ru/index.html",
+    "precache-manifest.96931ba5de4fc112acf3023e7537e20a.js": "koruja-shop.ru/precache-manifest.96931ba5de4fc112acf3023e7537e20a.js",
+    "service-worker.js": "koruja-shop.ru/service-worker.js",
+    "static/css/2.1a93710a.chunk.css.map": "koruja-shop.ru/static/css/2.1a93710a.chunk.css.map",
+    "static/css/main.1b527328.chunk.css.map": "koruja-shop.ru/static/css/main.1b527328.chunk.css.map",
+    "static/js/2.51aec098.chunk.js.LICENSE.txt": "koruja-shop.ru/static/js/2.51aec098.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "koruja-shop.ru/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/image2.svg": "koruja-shop.ru/static/media/image2.50265e9e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c1ccf9b4.js",
-    "static/css/2.46a25d5b.chunk.css",
-    "static/js/2.63b9b541.chunk.js",
+    "static/js/runtime-main.2a0e2097.js",
+    "static/css/2.1a93710a.chunk.css",
+    "static/js/2.51aec098.chunk.js",
     "static/css/main.1b527328.chunk.css",
-    "static/js/main.46d9c525.chunk.js"
+    "static/js/main.dcdde4d0.chunk.js"
   ]
 }
