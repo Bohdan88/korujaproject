@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { LANGUAGES } from '../constants';
 
 const LangContext = React.createContext({
-  lang: "",
+  lang: "ru-RU",
   currentLangData: {},
   switchLang: () => {}
 });
@@ -9,21 +10,17 @@ const LangContext = React.createContext({
 export default LangContext;
 
 export const LangProvider = props => {
+  
   const [lang, setLang] = useState(
-    window.localStorage.getItem("appUILang") || window.navigator.language
+    LANGUAGES["ru"]
   );
 
   useEffect(() => {
-    const selectedLang = window.localStorage.getItem("appUILang");
-
-    if (selectedLang) {
-      setLang(selectedLang);
-    }
   }, [lang]);
 
   const switchLang = ln => {
-    setLang(ln);
-    window.localStorage.setItem("appUILang", ln);
+    const chosenLang = lang === LANGUAGES["ru"] ? LANGUAGES["en"] : LANGUAGES["ru"]
+    setLang(chosenLang)
   };
 
   return (
@@ -53,7 +50,7 @@ const langData = {
       list: [
         "Wholesale supply of cosmetic and cosmetology products",
         "OEM and ODM production",
-        "Own brand of cosmetology products called ELOHA"
+        "Own brands of cosmetology products called ELOHA and iLLUMA"
       ]
     },
     products: {
@@ -134,7 +131,7 @@ const langData = {
       list: [
         "Оптовые поставки косметических и косметологических товаров",
         "Производство OEM, ODM",
-        "Собственный бренд косметологической продукции ELOHA"
+        "Собственные бренды косметологической продукции ELOHA и iLLUMA"
       ]
     },
     products: {

@@ -7,7 +7,7 @@ const routes = [
     {
         name: ["ГЛАВНАЯ", "HOME"],
         // path: "/korujaproject/#home",
-        path: "/",
+        path: "/#home",
         icon: "home",
         component: Header
     },

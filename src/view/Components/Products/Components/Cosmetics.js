@@ -77,14 +77,12 @@ const CustomizedStep = ({ products }) => {
 };
 const Cosmetics = () => {
   const { products } = useContext(LangContext).currentLangData;
-  // console.log(products, 'products')
 
   return (
     <div className="products-cosmetics-container">
       <Grid>
         <Grid.Row>
           <Header className="products-cosmetics-header" as="h3">
-            {" "}
             {products.services.header}
           </Header>
         </Grid.Row>
@@ -92,7 +90,6 @@ const Cosmetics = () => {
           <CustomizedStep products={products.services.steps} />
         </Grid.Row>
       </Grid>
-      {/* {console.log(products.services)} */}
     </div>
   );
 };

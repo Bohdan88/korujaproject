@@ -82,11 +82,11 @@ export const PRODUCTS_COSMETICS_STEPS = [
 ];
 
 // contacts
-export const USER_ID = "user_1D0BOMjDfxEea3jbnCdmp";
-export const TEMPLATE_ID = "template_Jpj3zWxG";
-// furute 
-// export const USER_ID = "user_PaYNGMPfAiBf1CSGaI3Vq";
-// export const TEMPLATE_ID = "template_OqhctrzW";
+// export const USER_ID = "user_1D0BOMjDfxEea3jbnCdmp";
+// export const TEMPLATE_ID = "template_Jpj3zWxG";
+//  
+export const USER_ID = "user_PaYNGMPfAiBf1CSGaI3Vq";
+export const TEMPLATE_ID = "template_OqhctrzW";
 export const NAME_LENGTH = 2;
 export const MINIMUM_MESSAGE_LENGTH = 15;
 export const MAX_MESSAGE_LENGTH = 250;
@@ -96,3 +96,10 @@ export const SERVICE_ID = "gmail";
 export const EMAIL_NAME = "krj.shop7@gmail.com";
 export const NETWORKS_NUMBER = "+82-10-387-75702";
 export const ADDITIONAL_NUMBER = "+82-55-266-8400";
+
+// languages 
+
+export const LANGUAGES = {
+  "ru": "ru-RU",
+  "en": "en-US"
+}
