@@ -44,5 +44,6 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  }
+  },
+  "homepage" : "http://bohdan88.github.io/korujaproject"
 }
