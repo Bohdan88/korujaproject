@@ -47,7 +47,7 @@ const About = () => {
         className="second-column-about"
       >
         <CloudImage
-          alt={""}
+          alt={"about"}
           className="about-image"
           cloudName={CLOUD_NAME}
           publicId={ABOUT_PUBLIC_ID}
